@@ -1,0 +1,34 @@
+% ----- Escrito por: Nahum Jovan Aranda López
+% ----- Entorno (Environment) que permite insertar cuadros
+% ----- para programas escritos en MATLAB - ya no ahora
+% ----- este es para algoritmos
+
+\usepackage{sverb}
+\usepackage{xtab}
+
+\def\theMatlab{\thechapter.\@arabic\c@table}
+\def\matlabsp{\def\baselinestretch{0.75}\large\normalsize}
+\def\matfunsp{\def\baselinestretch{1}\large\normalsize}
+
+    \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else%
+        \hbox{}%
+        \thispagestyle{empty}%              % Empty header styles
+        \newpage%
+        \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+
+\newenvironment{algoritmo}[1]
+    {
+    \refstepcounter{table}
+    \matlabsp
+    \addcontentsline{lot}{table}{\numberline {\theMatlab}{\ignorespaces ALGORITMO: #1}}
+
+        \begin{center} \tablefirsthead{\hline \\[-2mm] ALGORITMO \theMatlab: #1 \\[2mm] \hline \\[-5.5mm] \hline}
+        \begin{xtabular}{|m{145mm}|}
+    }
+    {
+        \\* \hline \end{xtabular} \end{center}
+    }
+
+\newenvironment{algofun}[2]
+    {\medskip \matfunsp \setlength{\parindent}{0pt} \begin{center}\begin{tabular}{p{20mm} p{120mm}} \hline \centering \textbf{#1} & \emph{#2} \\ \hline \end{tabular}\end{center}}
+    {}

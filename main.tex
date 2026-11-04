@@ -1,0 +1,272 @@
+\documentclass[12pt, oneside, final, letterpaper, stu]{huthesis}
+
+
+%%%% Paquetes %%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+%\inputencoding{latin1}
+%\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+
+%\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{xcolor,colortbl}
+\usepackage{rotating}
+\usepackage{times}
+\usepackage{pdflscape}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage[spanish]{babel}
+%\usepackage[print]{pdfscreen}
+\usepackage{ae}
+\usepackage{array}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfig}
+\usepackage{mathrsfs}
+%\usepackage{matlab}
+\usepackage{hyperref}
+\usepackage{Portada}
+%CORREGIR LA METODOLOGIA
+\usepackage{multirow}
+\usepackage{fancyhdr}
+%\usepackage{algoritmo}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{csquotes}
+\usepackage{colortbl}
+\usepackage{longtable}
+\usepackage{pgfgantt}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{pdflscape}
+\usepackage{microtype}
+\usepackage{rotating}
+\usepackage{adjustbox}
+\usepackage{amssymb}
+\usepackage{pifont}
+\usepackage{caption}
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{bibliografia.bib}
+% APA 7 en español: "y" en lugar de "&" entre los últimos autores
+\DeclareDelimFormat[bib,biblist]{finalnamedelim}{\addspace y\space}
+\DeclareDelimFormat[textcite]{finalnamedelim}{\addspace y\space}
+\DeclareDelimFormat[parencite]{finalnamedelim}{\addspace y\space}
+% Sin coma antes de "y" en la lista de referencias
+\makeatletter
+\renewcommand*{\apablx@ifnotfinalname}{%
+  \ifboolexpr{test {\ifnumless{\value{listcount}}{\value{liststop}-1}} or test \ifmorenames}}
+\makeatother
+
+
+
+\newcommand{\YES}{\ding{51}}   % relación directa
+\newcommand{\PAR}{$\triangle$} % relación parcial
+\newcommand{\NON}{---}         % sin relación
+
+
+%%%%%%%%%%%
+\usepackage{color}
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+
+\usepackage{listings}
+\lstset{ frame=Ltb,
+framerule=0pt,
+aboveskip=0.5cm,
+framextopmargin=3pt,
+framexbottommargin=3pt,
+framexleftmargin=0.4cm,
+framesep=0pt,
+rulesep=.4pt,
+backgroundcolor=\color{gray97},
+rulesepcolor=\color{black},
+%
+stringstyle=\ttfamily,
+showstringspaces = false,
+basicstyle=\small\ttfamily,
+commentstyle=\color{gray45},
+keywordstyle=\bfseries,
+% 
+numbers=left,
+numbersep=15pt,
+numberstyle=\tiny,
+numberfirstline = false,
+breaklines=true,
+}
+
+
+\lstdefinestyle{consola}
+{basicstyle=\scriptsize\bf\ttfamily,
+backgroundcolor=\color{gray75},
+}
+
+\lstdefinestyle{C}
+{language=C,
+}
+%%%%%%%%%%%
+
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{multicol}
+
+%\usepackage[latin1]{inputenc}
+%\usepackage[utf8]{inputenc}
+
+\hypersetup{backref=false, colorlinks=false}
+\spanishdecimal{.}
+\DeclareGraphicsExtensions{.pdf}
+\def\tablesp{\def\baselinestretch{1.1}\large\normalsize}
+\def\subtema{\subsubsection*}
+
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+
+\usepackage{xcolor,colortbl}
+\definecolor{verde}{rgb}{0,0.9,0}
+
+% Numeración de tablas sin número de sección
+\counterwithout{table}{section}
+
+%----------------------------------
+\input{seppal}     % ---- Se••••••••paraciones de palabras
+\input{defmat}     % ---- Definiciones matemticas
+
+
+%------------ Informacin de la Tesis
+\title{\LARGE Desarrollo de plataforma web para gestión de viviendas en arrendamiento en Miahuatlán de Porfirio Díaz, Oaxaca}	%---> Titulo
+\author{Castellanos Pacheco Mayra \\ Sánchez Martínez Elisa}												%---> Autor
+\usepackage[spanish]{babel}
+
+
+\degreemonth{Diciembre}																		%---> Mes
+\degreeyear{2025}																		%---> Ao
+\degree{Licenciado en Informática}															%---> Grado
+\institute{Instituto de Informática}														%---> Nombre del Instituto
+\department{Instituto de Informática}														%---> Nombre del departamento
+\university{Universidad de la Sierra Sur}													%---> Nombre universidad
+\place{Miahuatlán de Porfirio Díaz Oaxaca, México.}											%---> Lugar
+\advisor{Asesores}{M.C.C. Eliezer Alcázar Silva \\ M.C.C. Lirio Ruiz Guerra \\ M.F. Máximo Jorge Saavedra García \\ M.T.E. Everardo de Jesús Pacheco Antonio }	
+%Algoritmo
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\newlength\mylength
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\setlength\mylength{\dimexpr\textwidth-5\arrayrulewidth-8\tabcolsep}
+
+\lstset{
+	frame=tb,
+	language=C++,
+	aboveskip=3mm,
+	belowskip=3mm,
+	numbers=left,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	frame=leftline,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+
+%
+
+% --- Configuración para numeración de secciones ---
+\renewcommand{\thesection}{\thechapter.\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+\begin{document}
+
+    % Configuración de encabezados
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyhead[L]{\slshape \leftmark}
+    \fancyfoot[C]{\thepage}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\chaptermark}[1]{\markboth{Capítulo \thechapter: #1}{}}
+    \renewcommand{\sectionmark}[1]{}
+
+    \renewcommand{\tablename}{Tabla}
+    \renewcommand{\listtablename}{Índice de tablas}
+    \maketitle
+
+    %--- Páginas preliminares (comentadas mientras estén vacías) ---
+%    \begin{dedication}
+%        \vspace*{\fill}
+%        \begin{flushright}
+%            \textit{Dedicatoria aquí...}
+%        \end{flushright}
+%        \vspace*{\fill}
+%    \end{dedication}
+%
+%    \begin{acknowledgments}
+%        \begin{itemize}
+%            \item A alguien
+%            \hspace*{\fill} \item A otro alguien
+%            \item A otro alguien
+%        \end{itemize}
+%    \end{acknowledgments}
+%
+%    \begin{resumen}
+%        Resumen en español aquí...
+%    \end{resumen}
+%
+%    \begin{abstract}
+%        Abstract in English here...
+%    \end{abstract}
+
+%--- Índices y páginas preliminares ---
+    \pagenumbering{roman} 
+    \setcounter{page}{0}
+
+    \tableofcontents
+    \cleardoublepage
+
+%    \listoffigures      % sin figuras por ahora
+%    \cleardoublepage
+
+%    \listoftables       % sin tablas por ahora
+%    \cleardoublepage
+
+ %  \input{capitulos/acronimos}
+%    \cleardoublepage
+
+ %   \input{capitulos/glosario}
+ %   \cleardoublepage
+
+    % --- INICIO DEL CONTENIDO PRINCIPAL ---
+    \pagenumbering{arabic} 
+    \setcounter{page}{1}   
+
+    \include{capitulos/capitulo1}
+
+
+
+    %--- Apéndices ---
+    \appendix
+ %   \include{capitulos/apendiceA}  % Apéndice A
+    % \include{capitulos/apendiceB}  % Apéndice B 
+
+    \printbibliography[title={Referencias}]
+
+\end{document}

@@ -1,0 +1,176 @@
+\def\degreeyear#1{\gdef\@degreeyear{#1}}
+\def\degreemonth#1{\gdef\@degreemonth{#1}}
+
+% Title in english
+\def\titleen#1{\gdef\@titleen{#1}}
+
+
+% The full (unabbreviated) name of the degree
+\def\degree#1{\gdef\@degree{#1}}
+
+% The name of your advisor (AHB 00/9/18)
+\def\advisor#1#2{\gdef\@advisoryy{#1}\gdef\@advisorxx{#2}}
+
+% the institute
+\def\institute#1{\gdef\@institute{#1}}
+
+% the mastering
+\def\mastering#1{\gdef\@mastering{#1}}
+
+% the department
+\def\department#1{\gdef\@department{#1}}
+
+% the university
+\def\university#1{\gdef\@university{#1}}
+
+% the place
+\def\place#1{\gdef\@place{#1}}
+
+\newlength{\barswidth}
+\setlength{\barswidth}{1.5cm}
+\newlength{\totaltextwidth}
+\setlength{\totaltextwidth}{\textwidth}
+
+\addtolength{\totaltextwidth}{\barswidth}
+
+\makeatletter
+\def\maketitle{
+    \pagenumbering{roman}
+    \thispagestyle{empty}
+    \reset@font
+    \null
+
+    \vspace{-1in}
+
+    \hbox{
+    	\hspace{-\barswidth}
+        \vbox{
+            \hsize = 0.2\totaltextwidth
+            \centering
+            \includegraphics[width=0.20\totaltextwidth]{logos/logounsis1.png}
+        }
+        \vbox{
+            \hsize = 0.8\totaltextwidth
+            \begin{center}
+             	{\Large\bfseries\@university}\\
+             	\rule{12cm}{4pt}%  height 1mm width \totaltextwidth
+            \end{center}
+        }
+
+    }
+
+    \hbox{
+    	\hspace{-\barswidth}
+        \vtop{
+        %\vbox{
+        	\hsize = \barswidth
+          	\vrule width 1.4mm height 0.68\textheight depth -8mm \hspace{0.5mm}
+        	\vrule width 2mm height 0.72\textheight depth 0mm \hspace{0.5mm}
+        	\vrule width 1.4mm height 0.68\textheight depth -8mm \hspace{0.5mm}%
+        }
+%    \fbox{
+%    	\hbox{
+%    		\begin{center}
+%    			\vskip 15\p@
+%    			%\MakeUppercase
+%    			\Large
+%    			\bfseries
+%    			\@title\\
+%    			\vskip 50\p@
+%    		\end{center}
+%    	}
+%    	
+%    	\hbox{
+%    		\large \bfseries T\hspace{2mm}E\hspace{2mm}S\hspace{2mm}I\hspace{2mm}S\\
+%    		\large \bfseries Para obtener el t�tulo de:\\
+%    		\MakeUppercase\@degree\\
+%    		\vskip 50\p@
+%    		{\large \bfseries Presenta:}\\
+%    		{\large \bfseries \@author} \par
+%    		\vskip 50\p@
+%    		{\small \bfseries Bajo la direcci�n de:}
+%    		\begin{center}
+%    			\large \bfseries \@advisoryy\\
+%    			%\large \MakeUppercase\@advisorxx\\
+%    		\end{center}
+%    		\vskip 30\p@
+%    		\begin{flushright}
+%    			%{\tiny \MakeUppercase \@place{ }\MakeUppercase \@date}
+%    			{\tiny  Miahuatl�n de Porfirio D�az, Oaxaca, Diciembre de 2016}
+%    		\end{flushright}
+%    		\vfil
+%    	}
+%    }
+
+	\vbox{
+		%\hsize = \barswidth
+        %\hsize = 1.0\textwidth
+            \begin{center}
+            	\vskip 10\p@
+            	%\MakeUppercase
+            	\Large
+            	\bfseries
+            	\@title\\
+            	\vskip 30\p@
+            	\large \bfseries T\hspace{2mm}E\hspace{2mm}S\hspace{2mm}I\hspace{2mm}S\\
+            	\vskip 10\p@
+            	\normalsize \bfseries PARA OBTENER EL TÍTULO DE\\
+            	LICENCIATURA EN INFORMÁTICA\\
+            	\vskip 30\p@
+            	{\large \bfseries Presenta:}\\
+            	{\large \bfseries \@author} \par
+            	\vskip 30\p@
+            	\vskip 30\p@
+            	% Bloque de asesores oculto (no aparece en Avance_de_Protocolo.pdf).
+            	% Para mostrarlo de nuevo, descomente las siguientes líneas:
+%            	{\large \bfseries Bajo la dirección de:}\\
+%            	\vskip 5\p@
+%            	{\large \bfseries \@advisoryy}\\
+%               {\large \bfseries \@advisorxx}\\
+%            	\vskip 30\p@
+            	{\normalsize Miahuatlán de Porfirio Díaz, Oaxaca. \@degreemonth{} de \@degreeyear}
+%            	\end{flushright}
+            	\vfil
+        	\end{center}
+        }
+
+    }
+    
+%    \newpage
+%    \hbox{}
+%    \thispagestyle{empty}
+%    \newpage
+%    \thispagestyle{empty}
+%    %\addcontentsline{toc}{section}{P�gina de t�tulo}
+%    \let\footnotesize\small
+%    \let\footnoterule\relax
+%    %\parindent \z@
+%    \reset@font
+%    \null
+%    \vskip 10\p@
+%    \hbox{
+%        \mbox{%
+%        \hspace{4pt}%
+%        \fbox{\includegraphics[width=4em]{logos//logounsis.png}
+%        }%
+%        \hspace{4pt}
+%        }%
+%      \vrule width 2.0 mm depth 0.8\textheight \hspace{0.5mm} \vrule width 1.0mm depth 0.8\textheight%
+%      \mbox{\hspace{2em}}
+%      \vtop{% %%%%%%%%%%%%%%%%%%
+%        \hsize = 4in
+%        \vskip 40\p@
+%        \begin{flushleft}
+%          \Large \@author \par
+%        \end{flushleft}
+%        \vskip 80\p@
+%        \begin{flushleft}
+%          \LARGE \bfseries \@title \par
+%        \end{flushleft}
+%        \vfil
+%        }
+%    }
+}
+
+
+\makeatother

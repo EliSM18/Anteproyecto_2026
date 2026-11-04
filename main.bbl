@@ -1,0 +1,673 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{AvilaFlores2020}{inbook}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=299a03a07e5b6980bcdae48ec07dab9f}{%
+           family={Ávila\bibnamedelima Flores},
+           familyi={Á\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed110330db801f6d60b523c598f8de10}{%
+           family={López\bibnamedelima Hernández},
+           familyi={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5a8adf1186c58533a417e316d24d075}{%
+           family={Aragón\bibnamedelima Cruz},
+           familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Ciudad de México}%
+      }
+      \list{publisher}{1}{%
+        {Universidad Nacional Autónoma de México y Asociación Mexicana de Ciencias para el Desarrollo Regional A.C.}%
+      }
+      \strng{namehash}{0c53fdd86d1759eb104897971e243c59}
+      \strng{fullhash}{01f43986cf0a6d53e51cb00968c88274}
+      \strng{fullhashraw}{01f43986cf0a6d53e51cb00968c88274}
+      \strng{bibnamehash}{01f43986cf0a6d53e51cb00968c88274}
+      \strng{authorbibnamehash}{01f43986cf0a6d53e51cb00968c88274}
+      \strng{authornamehash}{0c53fdd86d1759eb104897971e243c59}
+      \strng{authorfullhash}{01f43986cf0a6d53e51cb00968c88274}
+      \strng{authorfullhashraw}{01f43986cf0a6d53e51cb00968c88274}
+      \field{sortinit}{Á}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Factores críticos y estratégicos en la interacción territorial: Desafíos actuales y escenarios futuros}
+      \field{title}{Crecimiento urbano y desarrollo sustentable en el municipio de {Miahuatlán} de {Porfirio} {Díaz}, {Oaxaca}, en el siglo {XXI}}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://ru.iiec.unam.mx/5202/
+      \endverb
+      \verb{url}
+      \verb https://ru.iiec.unam.mx/5202/
+      \endverb
+    \endentry
+    \entry{GarridoRodriguez2025}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d774af4ad13e22745d31250dabc0c478}{%
+           family={Garrido-Rodríguez},
+           familyi={G\bibinithyphendelim R\bibinitperiod},
+           given={Laura\bibnamedelima Alejandra},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d774af4ad13e22745d31250dabc0c478}
+      \strng{fullhash}{d774af4ad13e22745d31250dabc0c478}
+      \strng{fullhashraw}{d774af4ad13e22745d31250dabc0c478}
+      \strng{bibnamehash}{d774af4ad13e22745d31250dabc0c478}
+      \strng{authorbibnamehash}{d774af4ad13e22745d31250dabc0c478}
+      \strng{authornamehash}{d774af4ad13e22745d31250dabc0c478}
+      \strng{authorfullhash}{d774af4ad13e22745d31250dabc0c478}
+      \strng{authorfullhashraw}{d774af4ad13e22745d31250dabc0c478}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EURE: Revista de Estudios Urbano Regionales}
+      \field{number}{154}
+      \field{title}{¿Expansión o invasión? {El} auge de {Airbnb} en la {Ciudad} de {México}, 2019-2023}
+      \field{volume}{51}
+      \field{year}{2025}
+      \field{pages}{1\bibrangedash 25}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.7764/eure.51.154.02
+      \endverb
+    \endentry
+    \entry{SEINFRA2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d8b43e6c7c7a87fb08fbbf367670792d}{%
+           family={{Gobierno del Estado de Oaxaca}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Secretaría de Infraestructuras y Comunicaciones; Coordinación General de Planeación}%
+      }
+      \strng{namehash}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{fullhash}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{fullhashraw}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{bibnamehash}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{authorbibnamehash}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{authornamehash}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{authorfullhash}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{authorfullhashraw}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Plan de Ordenamiento Territorial: {Miahuatlán} de {Porfirio} {Díaz}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.oaxaca.gob.mx/planeacion/wp-content/uploads/sites/29/2024/08/31_OT-Miahuatlan_VF.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.oaxaca.gob.mx/planeacion/wp-content/uploads/sites/29/2024/08/31_OT-Miahuatlan_VF.pdf
+      \endverb
+    \endentry
+    \entry{INEGI2020DataMexico}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=148785b56bfec7ae2ca446233b8c9322}{%
+           family={{Instituto Nacional de Estadística y Geografía}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Data México; Secretaría de Economía}%
+      }
+      \strng{namehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{fullhash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{fullhashraw}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{bibnamehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authorbibnamehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authornamehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authorfullhash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authorfullhashraw}{148785b56bfec7ae2ca446233b8c9322}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Miahuatlán de Porfirio Díaz: Economía, empleo, equidad, calidad de vida y educación}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.economia.gob.mx/datamexico/es/profile/geo/miahuatlan-de-porfirio-diaz?travelTime=schoolMean
+      \endverb
+      \verb{url}
+      \verb https://www.economia.gob.mx/datamexico/es/profile/geo/miahuatlan-de-porfirio-diaz?travelTime=schoolMean
+      \endverb
+    \endentry
+    \entry{INEGI2021ENVI}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=148785b56bfec7ae2ca446233b8c9322}{%
+           family={{Instituto Nacional de Estadística y Geografía}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{fullhash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{fullhashraw}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{bibnamehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authorbibnamehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authornamehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authorfullhash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authorfullhashraw}{148785b56bfec7ae2ca446233b8c9322}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{month}{8}
+      \field{number}{493/21}
+      \field{title}{Encuesta Nacional de Vivienda ({ENVI}) 2020: Principales resultados}
+      \field{type}{Comunicado de prensa}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2021/envi/ENVI2020.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2021/envi/ENVI2020.pdf
+      \endverb
+    \endentry
+    \entry{MejiaAvecias2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=0767fb1c76dc63791c0d8d3a0a62c661}{%
+           family={Mejía-Avecias},
+           familyi={M\bibinithyphendelim A\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=436cbe6ddd8391788bded74e821fb012}{%
+           family={Corona-Ortiz},
+           familyi={C\bibinithyphendelim O\bibinitperiod},
+           given={Jerusalem},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7e51072f6f461bb5be20c35cc42f8a0}{%
+           family={Barrera-Cervantes},
+           familyi={B\bibinithyphendelim C\bibinitperiod},
+           given={Luis\bibnamedelima Felipe},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de635f44d89fe923adbaecf9176cd728}{%
+           family={Espejel-Cordero},
+           familyi={E\bibinithyphendelim C\bibinitperiod},
+           given={Zahid},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2b1c1c19faea939713b405e8cb477b22}
+      \strng{fullhash}{f33c794327e7dad23848e33cf3d6a6bf}
+      \strng{fullhashraw}{f33c794327e7dad23848e33cf3d6a6bf}
+      \strng{bibnamehash}{f33c794327e7dad23848e33cf3d6a6bf}
+      \strng{authorbibnamehash}{f33c794327e7dad23848e33cf3d6a6bf}
+      \strng{authornamehash}{2b1c1c19faea939713b405e8cb477b22}
+      \strng{authorfullhash}{f33c794327e7dad23848e33cf3d6a6bf}
+      \strng{authorfullhashraw}{f33c794327e7dad23848e33cf3d6a6bf}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{XIKUA Boletín Científico de la Escuela Superior de Tlahuelilpan}
+      \field{number}{22}
+      \field{title}{Desarrollo de un sistema web enfocado a optimizar la obtención y distribución de información para el arrendamiento de departamentos dirigidos a estudiantes en {México}}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{pages}{31\bibrangedash 38}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.29057/xikua.v11i22.10671
+      \endverb
+    \endentry
+    \entry{Valenzuela2024}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b91607bdb6cbbd551e0bb710371d76ae}{%
+           family={Valenzuela\bibnamedelima Robles},
+           familyi={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={C.\bibnamedelimi L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidad Nacional Daniel Alcides Carrión}%
+      }
+      \strng{namehash}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{fullhash}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{fullhashraw}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{bibnamehash}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{authorbibnamehash}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{authornamehash}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{authorfullhash}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{authorfullhashraw}{b91607bdb6cbbd551e0bb710371d76ae}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Desarrollo de un sistema web para optimizar el control de pagos por arrendamiento de locales para la {Sub} {Gerencia} de {Recaudación} de la {Municipalidad} {Provincial} de {Pasco}}
+      \field{type}{Tesis}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb http://repositorio.undac.edu.pe/handle/undac/4461
+      \endverb
+      \verb{url}
+      \verb http://repositorio.undac.edu.pe/handle/undac/4461
+      \endverb
+    \endentry
+    \entry{ZepedaGarcia2019}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ab5f71944538a678de7ab364fd46d616}{%
+           family={Zepeda\bibnamedelima García},
+           familyi={Z\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Evangelina},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47a1c05fd408f3abfc3ed3680778c524}{%
+           family={Bravo\bibnamedelima Salazar},
+           familyi={B\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Rocío\bibnamedelima Guadalupe},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{fullhash}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{fullhashraw}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{bibnamehash}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{authorbibnamehash}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{authornamehash}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{authorfullhash}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{authorfullhashraw}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Tla-melaua: Revista de Ciencias Sociales}
+      \field{number}{47}
+      \field{title}{Universidad y ¿desarrollo local?: {La} experiencia de {Miahuatlán} de {Porfirio} {Díaz}, {Oaxaca}}
+      \field{year}{2019}
+      \field{pages}{110\bibrangedash 128}
+      \range{pages}{19}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=7390830
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=7390830
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{AvilaFlores2020}{inbook}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=299a03a07e5b6980bcdae48ec07dab9f}{%
+           family={Ávila\bibnamedelima Flores},
+           familyi={Á\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed110330db801f6d60b523c598f8de10}{%
+           family={López\bibnamedelima Hernández},
+           familyi={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5a8adf1186c58533a417e316d24d075}{%
+           family={Aragón\bibnamedelima Cruz},
+           familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Ciudad de México}%
+      }
+      \list{publisher}{1}{%
+        {Universidad Nacional Autónoma de México y Asociación Mexicana de Ciencias para el Desarrollo Regional A.C.}%
+      }
+      \strng{namehash}{0c53fdd86d1759eb104897971e243c59}
+      \strng{fullhash}{01f43986cf0a6d53e51cb00968c88274}
+      \strng{fullhashraw}{01f43986cf0a6d53e51cb00968c88274}
+      \strng{bibnamehash}{01f43986cf0a6d53e51cb00968c88274}
+      \strng{authorbibnamehash}{01f43986cf0a6d53e51cb00968c88274}
+      \strng{authornamehash}{0c53fdd86d1759eb104897971e243c59}
+      \strng{authorfullhash}{01f43986cf0a6d53e51cb00968c88274}
+      \strng{authorfullhashraw}{01f43986cf0a6d53e51cb00968c88274}
+      \field{sortinit}{Á}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Factores críticos y estratégicos en la interacción territorial: Desafíos actuales y escenarios futuros}
+      \field{title}{Crecimiento urbano y desarrollo sustentable en el municipio de {Miahuatlán} de {Porfirio} {Díaz}, {Oaxaca}, en el siglo {XXI}}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://ru.iiec.unam.mx/5202/
+      \endverb
+      \verb{url}
+      \verb https://ru.iiec.unam.mx/5202/
+      \endverb
+    \endentry
+    \entry{GarridoRodriguez2025}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d774af4ad13e22745d31250dabc0c478}{%
+           family={Garrido-Rodríguez},
+           familyi={G\bibinithyphendelim R\bibinitperiod},
+           given={Laura\bibnamedelima Alejandra},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d774af4ad13e22745d31250dabc0c478}
+      \strng{fullhash}{d774af4ad13e22745d31250dabc0c478}
+      \strng{fullhashraw}{d774af4ad13e22745d31250dabc0c478}
+      \strng{bibnamehash}{d774af4ad13e22745d31250dabc0c478}
+      \strng{authorbibnamehash}{d774af4ad13e22745d31250dabc0c478}
+      \strng{authornamehash}{d774af4ad13e22745d31250dabc0c478}
+      \strng{authorfullhash}{d774af4ad13e22745d31250dabc0c478}
+      \strng{authorfullhashraw}{d774af4ad13e22745d31250dabc0c478}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EURE: Revista de Estudios Urbano Regionales}
+      \field{number}{154}
+      \field{title}{¿Expansión o invasión? {El} auge de {Airbnb} en la {Ciudad} de {México}, 2019-2023}
+      \field{volume}{51}
+      \field{year}{2025}
+      \field{pages}{1\bibrangedash 25}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.7764/eure.51.154.02
+      \endverb
+    \endentry
+    \entry{SEINFRA2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d8b43e6c7c7a87fb08fbbf367670792d}{%
+           family={{Gobierno del Estado de Oaxaca}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Secretaría de Infraestructuras y Comunicaciones; Coordinación General de Planeación}%
+      }
+      \strng{namehash}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{fullhash}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{fullhashraw}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{bibnamehash}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{authorbibnamehash}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{authornamehash}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{authorfullhash}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \strng{authorfullhashraw}{d8b43e6c7c7a87fb08fbbf367670792d}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Plan de Ordenamiento Territorial: {Miahuatlán} de {Porfirio} {Díaz}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.oaxaca.gob.mx/planeacion/wp-content/uploads/sites/29/2024/08/31_OT-Miahuatlan_VF.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.oaxaca.gob.mx/planeacion/wp-content/uploads/sites/29/2024/08/31_OT-Miahuatlan_VF.pdf
+      \endverb
+    \endentry
+    \entry{INEGI2020DataMexico}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=148785b56bfec7ae2ca446233b8c9322}{%
+           family={{Instituto Nacional de Estadística y Geografía}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Data México; Secretaría de Economía}%
+      }
+      \strng{namehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{fullhash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{fullhashraw}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{bibnamehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authorbibnamehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authornamehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authorfullhash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authorfullhashraw}{148785b56bfec7ae2ca446233b8c9322}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Miahuatlán de Porfirio Díaz: Economía, empleo, equidad, calidad de vida y educación}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.economia.gob.mx/datamexico/es/profile/geo/miahuatlan-de-porfirio-diaz?travelTime=schoolMean
+      \endverb
+      \verb{url}
+      \verb https://www.economia.gob.mx/datamexico/es/profile/geo/miahuatlan-de-porfirio-diaz?travelTime=schoolMean
+      \endverb
+    \endentry
+    \entry{INEGI2021ENVI}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=148785b56bfec7ae2ca446233b8c9322}{%
+           family={{Instituto Nacional de Estadística y Geografía}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{fullhash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{fullhashraw}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{bibnamehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authorbibnamehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authornamehash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authorfullhash}{148785b56bfec7ae2ca446233b8c9322}
+      \strng{authorfullhashraw}{148785b56bfec7ae2ca446233b8c9322}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{month}{8}
+      \field{number}{493/21}
+      \field{title}{Encuesta Nacional de Vivienda ({ENVI}) 2020: Principales resultados}
+      \field{type}{Comunicado de prensa}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2021/envi/ENVI2020.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2021/envi/ENVI2020.pdf
+      \endverb
+    \endentry
+    \entry{MejiaAvecias2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=0767fb1c76dc63791c0d8d3a0a62c661}{%
+           family={Mejía-Avecias},
+           familyi={M\bibinithyphendelim A\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=436cbe6ddd8391788bded74e821fb012}{%
+           family={Corona-Ortiz},
+           familyi={C\bibinithyphendelim O\bibinitperiod},
+           given={Jerusalem},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7e51072f6f461bb5be20c35cc42f8a0}{%
+           family={Barrera-Cervantes},
+           familyi={B\bibinithyphendelim C\bibinitperiod},
+           given={Luis\bibnamedelima Felipe},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de635f44d89fe923adbaecf9176cd728}{%
+           family={Espejel-Cordero},
+           familyi={E\bibinithyphendelim C\bibinitperiod},
+           given={Zahid},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2b1c1c19faea939713b405e8cb477b22}
+      \strng{fullhash}{f33c794327e7dad23848e33cf3d6a6bf}
+      \strng{fullhashraw}{f33c794327e7dad23848e33cf3d6a6bf}
+      \strng{bibnamehash}{f33c794327e7dad23848e33cf3d6a6bf}
+      \strng{authorbibnamehash}{f33c794327e7dad23848e33cf3d6a6bf}
+      \strng{authornamehash}{2b1c1c19faea939713b405e8cb477b22}
+      \strng{authorfullhash}{f33c794327e7dad23848e33cf3d6a6bf}
+      \strng{authorfullhashraw}{f33c794327e7dad23848e33cf3d6a6bf}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{XIKUA Boletín Científico de la Escuela Superior de Tlahuelilpan}
+      \field{number}{22}
+      \field{title}{Desarrollo de un sistema web enfocado a optimizar la obtención y distribución de información para el arrendamiento de departamentos dirigidos a estudiantes en {México}}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{pages}{31\bibrangedash 38}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.29057/xikua.v11i22.10671
+      \endverb
+    \endentry
+    \entry{Valenzuela2024}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b91607bdb6cbbd551e0bb710371d76ae}{%
+           family={Valenzuela\bibnamedelima Robles},
+           familyi={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={C.\bibnamedelimi L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidad Nacional Daniel Alcides Carrión}%
+      }
+      \strng{namehash}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{fullhash}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{fullhashraw}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{bibnamehash}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{authorbibnamehash}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{authornamehash}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{authorfullhash}{b91607bdb6cbbd551e0bb710371d76ae}
+      \strng{authorfullhashraw}{b91607bdb6cbbd551e0bb710371d76ae}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Desarrollo de un sistema web para optimizar el control de pagos por arrendamiento de locales para la {Sub} {Gerencia} de {Recaudación} de la {Municipalidad} {Provincial} de {Pasco}}
+      \field{type}{Tesis}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb http://repositorio.undac.edu.pe/handle/undac/4461
+      \endverb
+      \verb{url}
+      \verb http://repositorio.undac.edu.pe/handle/undac/4461
+      \endverb
+    \endentry
+    \entry{ZepedaGarcia2019}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ab5f71944538a678de7ab364fd46d616}{%
+           family={Zepeda\bibnamedelima García},
+           familyi={Z\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Evangelina},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47a1c05fd408f3abfc3ed3680778c524}{%
+           family={Bravo\bibnamedelima Salazar},
+           familyi={B\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Rocío\bibnamedelima Guadalupe},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{fullhash}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{fullhashraw}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{bibnamehash}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{authorbibnamehash}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{authornamehash}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{authorfullhash}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \strng{authorfullhashraw}{e7b4cdb6d7682ec6352a08375ad32e8a}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Tla-melaua: Revista de Ciencias Sociales}
+      \field{number}{47}
+      \field{title}{Universidad y ¿desarrollo local?: {La} experiencia de {Miahuatlán} de {Porfirio} {Díaz}, {Oaxaca}}
+      \field{year}{2019}
+      \field{pages}{110\bibrangedash 128}
+      \range{pages}{19}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=7390830
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=7390830
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

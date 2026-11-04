@@ -1,0 +1,48 @@
+# --- Archivos auxiliares de LaTeX (se regeneran al compilar) ---
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.lof
+*.lot
+*.toc
+*.out
+*.log
+*.run.xml
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.glg
+*.acn
+*.acr
+*.alg
+*.ist
+
+# --- PDF generado (se obtiene compilando main.tex) ---
+main.pdf
+
+# --- Archivos temporales de editores y del sistema ---
+*~
+*.bak
+*.swp
+.~lock.*#
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Materiales del curso (no forman parte del documento) ---
+Unidad-2-Estructura-del-Anteproyecto-de-Investigacion.pdf
+Tabla de Fuentes.pdf
+Ejercicio de citas.odt

@@ -45,3 +45,33 @@ Actualmente, la difusión de la oferta de viviendas en renta se realiza principa
 Como consecuencia, las personas que buscan alojamiento, particularmente los estudiantes no residentes, enfrentan dificultades para localizar y comparar alternativas de vivienda de acuerdo con su presupuesto, ubicación, características y necesidades particulares. Esto incrementa el tiempo y esfuerzo dedicado al proceso de búsqueda, además de generar incertidumbre al momento de establecer contacto con los arrendadores. Asimismo, la falta de mecanismos de verificación y de información confiable aumenta el riesgo de ser víctimas de posibles fraudes, como ofertas de inmuebles inexistentes, publicaciones engañosas o viviendas cuyas condiciones no corresponden con lo anunciado, lo que puede ocasionar pérdidas económicas y afectar la experiencia de adaptación de los estudiantes a su nuevo entorno.
 
 En este contexto, se identifica la necesidad de contar con una solución tecnológica que centralice la oferta de viviendas en renta en Miahuatlán de Porfirio Díaz, facilite la búsqueda y comparación de inmuebles mediante criterios específicos y proporcione información organizada y actualizada. Asimismo, resulta importante incorporar mecanismos que contribuyan a generar mayor confianza entre arrendadores y arrendatarios, favoreciendo un proceso de búsqueda y selección de vivienda más accesible, eficiente y seguro, especialmente para la comunidad estudiantil de la Universidad de la Sierra Sur.
+¿De qué manera el diseño e implementación de una plataforma web centralizada con geolocalización y mecanismos de verificación de viviendas en arrendamiento puede optimizar los tiempos de búsqueda y reducir los riesgos de fraude para la población en situación de movilidad académica y laboral?
+
+\section{Justificación}
+
+El presente proyecto se justifica en cuatro dimensiones: social, tecnológica, económica y metodológica.
+
+\textbf{Social.} Los beneficiarios directos son los estudiantes no residentes de la Universidad de la Sierra Sur, cuya matrícula asciende a aproximadamente 2\,294 estudiantes, así como el personal docente y administrativo que se traslada temporalmente a Miahuatlán de Porfirio Díaz. Para esta población, la búsqueda de vivienda depende hoy de publicaciones dispersas en redes sociales y de anuncios físicos que no permiten verificar la existencia del inmueble ni la identidad del arrendador. Una plataforma que concentre la oferta y que incorpore mecanismos de verificación contribuye a reducir la exposición a ofertas engañosas o inexistentes y a que los estudiantes elijan su alojamiento con información suficiente sobre su ubicación, servicios y condiciones, lo que favorece su adaptación al municipio durante su formación académica.
+
+\textbf{Tecnológica.} Los sistemas web reportados en la literatura para la renta de vivienda estudiantil \parencite{MejiaAvecias2023} demuestran la viabilidad técnica de centralizar esta información, pero no integran componentes geográficos ni reportan una evaluación con usuarios finales. El proyecto aporta una plataforma que vincula cada inmueble con la delimitación oficial de colonias y la cobertura de servicios del Plan de Ordenamiento Territorial \parencite{SEINFRA2024}, así como con su distancia a la UNSIS, lo que permite filtrar y comparar opciones con criterios que actualmente no están disponibles en ningún medio de difusión local.
+
+\textbf{Económica.} Para los arrendadores locales, la plataforma representa un canal formal de difusión de bajo costo que amplía la visibilidad de sus inmuebles hacia la comunidad universitaria, sin depender de la vigencia de una publicación en grupos de redes sociales. Para los arrendatarios, la posibilidad de comparar precios, servicios y ubicación en un solo lugar facilita la elección de la opción con mejor relación costo--beneficio para su presupuesto y reduce los gastos asociados a traslados y visitas a inmuebles que no cumplen lo anunciado. Asimismo, el registro estructurado de las condiciones de renta puede servir como referencia para formalizar acuerdos, en un país donde casi la mitad de las viviendas rentadas carece de contrato vigente \parencite{INEGI2021ENVI}.
+
+\textbf{Metodológica.} A diferencia de los antecedentes revisados, el proyecto contempla la evaluación de la plataforma con sus usuarios mediante indicadores medibles, como el tiempo de búsqueda, la usabilidad percibida y la confianza en la información publicada. El protocolo de evaluación diseñado podrá reutilizarse en otros municipios con presencia universitaria y un mercado de renta informal similar al de Miahuatlán de Porfirio Díaz, para el cual no se identificaron estudios previos.
+
+\section{Objetivos}
+
+% TODO: confirmar el periodo de realización del proyecto (se asume 2026--2027).
+\subsection{Objetivo general}
+
+Evaluar el efecto de una plataforma web centralizada, con geolocalización y mecanismos de verificación de inmuebles, en el tiempo de búsqueda de vivienda en renta y en la confianza percibida por estudiantes no residentes de la Universidad de la Sierra Sur en Miahuatlán de Porfirio Díaz, Oaxaca, durante el periodo 2026--2027.
+
+\subsection{Objetivos específicos}
+
+\begin{enumerate}
+    \item Identificar las necesidades, criterios de búsqueda y riesgos que enfrentan los estudiantes no residentes de la UNSIS y los arrendadores locales en el proceso de renta de vivienda, mediante encuestas y entrevistas.
+    \item Diseñar la arquitectura, el modelo de datos y los mecanismos de verificación de arrendadores e inmuebles de la plataforma, con base en los requerimientos identificados y en la delimitación territorial de colonias y servicios del municipio.
+    \item Implementar un prototipo funcional de la plataforma web que integre el registro de inmuebles, la búsqueda por criterios de precio, servicios y ubicación, y su visualización geográfica respecto a la UNSIS.
+    \item Comparar el tiempo de búsqueda y el nivel de confianza percibida de un grupo de estudiantes al localizar vivienda mediante la plataforma frente a los medios de difusión actuales.
+    \item Evaluar la usabilidad del prototipo con estudiantes y arrendadores mediante un instrumento estandarizado, como la Escala de Usabilidad del Sistema (SUS).
+\end{enumerate}

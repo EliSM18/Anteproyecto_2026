@@ -45,7 +45,7 @@ Actualmente, la difusión de la oferta de viviendas en renta se realiza principa
 Como consecuencia, las personas que buscan alojamiento, particularmente los estudiantes no residentes, enfrentan dificultades para localizar y comparar alternativas de vivienda de acuerdo con su presupuesto, ubicación, características y necesidades particulares. Esto incrementa el tiempo y esfuerzo dedicado al proceso de búsqueda, además de generar incertidumbre al momento de establecer contacto con los arrendadores. Asimismo, la falta de mecanismos de verificación y de información confiable aumenta el riesgo de ser víctimas de posibles fraudes, como ofertas de inmuebles inexistentes, publicaciones engañosas o viviendas cuyas condiciones no corresponden con lo anunciado, lo que puede ocasionar pérdidas económicas y afectar la experiencia de adaptación de los estudiantes a su nuevo entorno.
 
 En este contexto, se identifica la necesidad de contar con una solución tecnológica que centralice la oferta de viviendas en renta en Miahuatlán de Porfirio Díaz, facilite la búsqueda y comparación de inmuebles mediante criterios específicos y proporcione información organizada y actualizada. Asimismo, resulta importante incorporar mecanismos que contribuyan a generar mayor confianza entre arrendadores y arrendatarios, favoreciendo un proceso de búsqueda y selección de vivienda más accesible, eficiente y seguro, especialmente para la comunidad estudiantil de la Universidad de la Sierra Sur.
-¿De qué manera el diseño e implementación de una plataforma web centralizada con geolocalización y mecanismos de verificación de viviendas en arrendamiento puede optimizar los tiempos de búsqueda y reducir los riesgos de fraude para la población en situación de movilidad académica y laboral?
+¿En qué medida el diseño e implementación de una plataforma web centralizada con geolocalización y mecanismos de verificación de viviendas en arrendamiento puede optimizar los tiempos de búsqueda y aumentar el nivel de confianza percibida para la población en situación de movilidad académica y laboral?
 
 \section{Justificación}
 
@@ -75,3 +75,84 @@ Evaluar el efecto de una plataforma web centralizada, con geolocalización y mec
     \item Comparar el tiempo de búsqueda y el nivel de confianza percibida de un grupo de estudiantes al localizar vivienda mediante la plataforma frente a los medios de difusión actuales.
     \item Evaluar la usabilidad del prototipo con estudiantes y arrendadores mediante un instrumento estandarizado, como la Escala de Usabilidad del Sistema (SUS).
 \end{enumerate}
+
+\section{Hipótesis}
+
+La presente investigación tiene un enfoque cuantitativo y plantea hipótesis de diferencia de grupos con alcance causal, ya que se manipula el medio con el que se realiza la búsqueda de vivienda y se mide su efecto en dos resultados observables \parencite{HernandezSampieri2018}. Para cumplir el criterio de una sola relación por hipótesis, el tiempo de búsqueda y la confianza percibida se formulan por separado.
+
+\subsection{Hipótesis de investigación}
+
+\begin{description}
+    \item[Hipótesis 1.] El uso de una plataforma web centralizada, con geolocalización y mecanismos de verificación de inmuebles, reduce el tiempo de búsqueda de vivienda en renta de los estudiantes no residentes de la UNSIS en comparación con los medios de difusión actuales (grupos de Facebook y anuncios físicos).
+    \item[Hipótesis 2.] El uso de una plataforma web centralizada, con geolocalización y mecanismos de verificación de inmuebles, aumenta el nivel de confianza percibida por los estudiantes no residentes de la UNSIS en la información de las ofertas de vivienda en renta en comparación con los medios de difusión actuales.
+\end{description}
+
+Ambas hipótesis comparten los siguientes elementos:
+
+\begin{itemize}
+    \item \textbf{Unidad de análisis:} estudiantes no residentes de la Universidad de la Sierra Sur que buscan o han buscado vivienda en renta en Miahuatlán de Porfirio Díaz.
+    \item \textbf{Variables:} el medio de búsqueda (independiente), el tiempo de búsqueda y la confianza percibida (dependientes).
+    \item \textbf{Relación lógica:} el medio de búsqueda \emph{reduce} el tiempo de búsqueda (Hipótesis 1) y \emph{aumenta} la confianza percibida (Hipótesis 2).
+\end{itemize}
+
+\subsection{Variables de investigación}
+
+\begin{description}
+    \item[Variable independiente.] Medio de búsqueda de vivienda, con dos niveles: (a) la plataforma web propuesta y (b) los medios de difusión actuales, representados por publicaciones de grupos de Facebook y fotografías de anuncios físicos.
+    \item[Variables dependientes.] Tiempo de búsqueda de ofertas de vivienda en arrendamiento y nivel de confianza percibida por el usuario.
+    \item[Variables de control.] Para que la diferencia observada se atribuya al medio de búsqueda y no a otros factores, se mantendrán constantes: el conjunto de ofertas (las mismas viviendas, recopiladas de los medios actuales, estarán disponibles en ambos medios), la tarea de búsqueda (mismos criterios de presupuesto, servicios y distancia a la UNSIS), el equipo de cómputo y la conexión a internet. Además, se alternará el orden en que cada participante utiliza los medios (contrabalanceo) y se registrará su experiencia previa en la búsqueda de vivienda y su frecuencia de uso de Facebook para considerarlas en el análisis.
+\end{description}
+
+\begin{comment}
+\subsection{Operacionalización de las variables dependientes}
+
+En la Tabla~\ref{tab:operacionalizacion} se define cada variable dependiente y la forma en que se medirá.
+
+% TODO: definir el tiempo límite por tarea tras la prueba piloto (se propone 10 minutos).
+\begin{table}[H]
+\centering
+\small
+\caption{Operacionalización de las variables dependientes.}
+\label{tab:operacionalizacion}
+\begin{tabularx}{\textwidth}{>{\RaggedRight\arraybackslash}p{2.1cm} >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}p{2.6cm}}
+\toprule
+\textbf{Variable} & \textbf{Definición conceptual} & \textbf{Definición operacional} & \textbf{Indicador e instrumento} \\
+\midrule
+Tiempo de búsqueda &
+Lapso que una persona invierte desde que comienza a buscar vivienda hasta que identifica una oferta que satisface sus criterios. &
+Tiempo que tarda cada participante en completar una tarea estandarizada de búsqueda (localizar una vivienda que cumpla un presupuesto, servicios y distancia máxima a la UNSIS), medido desde el inicio de la tarea hasta que señala la oferta elegida. Las tareas no concluidas se registran con el tiempo límite. &
+Segundos por tarea. Bitácora de pruebas con cronómetro y grabación de pantalla. \\
+\addlinespace
+Confianza percibida &
+Actitud de que un agente ayudará a alcanzar los objetivos de una persona en una situación caracterizada por incertidumbre y vulnerabilidad \parencite{LeeSee2004}. &
+Puntuación obtenida en la Escala de Confianza en Sistemas Automatizados \parencite{Jian2000}, traducida al español y adaptada para referirse al medio de búsqueda utilizado. Consta de 12 reactivos con escala Likert de 1 a 7; los cinco reactivos de desconfianza se invierten antes de promediar. &
+Puntuación media de 1 a 7. Cuestionario aplicado al terminar la tarea en cada medio. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Se eligió la escala de \textcite{Jian2000} porque es un instrumento multirreactivo construido empíricamente, lo que permite estimar su consistencia interna (alfa de Cronbach) con los datos de este estudio. La traducción se validará mediante retrotraducción y una prueba piloto con estudiantes que no formen parte de la muestra.
+
+\subsection{Hipótesis estadísticas}
+
+Sean $\mu_{P}$ y $\mu_{M}$ las medias obtenidas por los participantes con la plataforma y con los medios actuales, respectivamente.
+
+\textbf{Hipótesis 1 (tiempo de búsqueda).}
+\begin{itemize}
+    \item $H_0$: la plataforma no reduce el tiempo de búsqueda frente a los medios actuales ($\mu_{P} \geq \mu_{M}$).
+    \item $H_1$: la plataforma reduce el tiempo de búsqueda frente a los medios actuales ($\mu_{P} < \mu_{M}$).
+\end{itemize}
+
+\textbf{Hipótesis 2 (confianza percibida).}
+\begin{itemize}
+    \item $H_0$: la plataforma no aumenta la confianza percibida frente a los medios actuales ($\mu_{P} \leq \mu_{M}$).
+    \item $H_1$: la plataforma aumenta la confianza percibida frente a los medios actuales ($\mu_{P} > \mu_{M}$).
+\end{itemize}
+
+% TODO: calcular el tamaño de muestra cuando se defina el diseño en la metodología.
+Dado que cada participante utilizará ambos medios, las hipótesis se contrastarán con una prueba $t$ de Student para muestras relacionadas, unilateral y con un nivel de significancia $\alpha = 0.05$. Si las diferencias no siguen una distribución normal (prueba de Shapiro-Wilk), se empleará la prueba de rangos con signo de Wilcoxon.
+
+\subsection{Medición complementaria: usabilidad}
+
+La usabilidad no forma parte de las hipótesis, puesto que no es una de las variables cuya relación se contrasta, pero se medirá como evaluación complementaria en atención al quinto objetivo específico. Al concluir las tareas, estudiantes y arrendadores responderán la Escala de Usabilidad del Sistema \parencite[SUS;][]{Brooke1996}, de 10 reactivos, que produce una puntuación de 0 a 100. El resultado se reportará de forma descriptiva y se interpretará con respecto al promedio de referencia de 68 puntos \parencite{LewisSauro2018} y a la escala de adjetivos de \textcite{Bangor2008}. Este dato también ayudará a interpretar los resultados de las hipótesis; por ejemplo, una baja usabilidad podría explicar que la plataforma no reduzca el tiempo de búsqueda.
+\end{comment}

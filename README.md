@@ -40,7 +40,7 @@ También se puede usar `latexmk -pdf main`. El resultado es `main.pdf`.
 |---|---|
 | Título de la investigación | Terminado |
 | Antecedentes | Casi Terminado (falta agregar cifras para robustecer los antecedentes) |
-| Planteamiento del problema | Casi Terminado (falta citar la fuente de la matrícula de la UNSIS) |
+| Planteamiento del problema | Casi Terminado (falta citar la fuente de la matrícula de la UNSIS y agregar porcentaje de estudiantes no residentes) |
 | Justificación | Por aprobar |
 | Objetivos general y específicos | Por aprobar |
 | Hipótesis | En proceso |

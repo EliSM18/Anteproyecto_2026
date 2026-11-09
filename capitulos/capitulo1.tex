@@ -78,15 +78,11 @@ Evaluar el efecto de una plataforma web centralizada, con geolocalización y mec
 
 \section{Hipótesis}
 
-La presente investigación tiene un enfoque cuantitativo y plantea hipótesis de diferencia de grupos con alcance causal, ya que se manipula el medio con el que se realiza la búsqueda de vivienda y se mide su efecto en dos resultados observables \parencite{HernandezSampieri2018}. Para cumplir el criterio de una sola relación por hipótesis, el tiempo de búsqueda y la confianza percibida se formulan por separado.
+La presente investigación tiene un enfoque cuantitativo y plantea una hipótesis de diferencia de grupos con alcance causal, ya que se manipula el medio con el que se realiza la búsqueda de vivienda y se mide su efecto en dos resultados observables \parencite{HernandezSampieri2018}.
 
 \subsection{Hipótesis de investigación}
 
-\begin{description}
-    \item[Hipótesis 1.] El uso de una plataforma web centralizada, con geolocalización y mecanismos de verificación de inmuebles, reduce el tiempo de búsqueda de viviendas en renta y aumenta el nivel de confianza persibida de los estudiantes no residentes de la UNSIS en comparación con los medios de difusión actuales (grupos de Facebook y anuncios físicos).
-\end{description}
-
-Elementos detectados para operacionalizar la hipótesis:
+El uso de una plataforma web centralizada, con geolocalización y mecanismos de verificación de inmuebles, reduce el tiempo de búsqueda de viviendas en renta y aumenta el nivel de confianza percibida de los estudiantes no residentes de la UNSIS en comparación con los medios de difusión actuales (grupos de Facebook y anuncios físicos). Elementos detectados para operacionalizar la hipótesis:
 
 \begin{itemize}
     \item \textbf{Unidad de análisis:} estudiantes no residentes de la Universidad de la Sierra Sur que buscan o han buscado vivienda en renta en Miahuatlán de Porfirio Díaz.
@@ -102,7 +98,6 @@ Elementos detectados para operacionalizar la hipótesis:
     \item[Variables de control.] Para que la diferencia observada se atribuya al medio de búsqueda y no a otros factores, se mantendrán constantes: el conjunto de ofertas (las mismas viviendas, recopiladas de los medios actuales, estarán disponibles en ambos medios), la tarea de búsqueda (mismos criterios de presupuesto, servicios y distancia a la UNSIS), el equipo de cómputo y la conexión a internet. Además, se alternará el orden en que cada participante utiliza los medios (contrabalanceo) y se registrará su experiencia previa en la búsqueda de vivienda y su frecuencia de uso de Facebook para considerarlas en el análisis.
 \end{description}
 
-\begin{comment}
 \subsection{Operacionalización de las variables dependientes}
 
 En la Tabla~\ref{tab:operacionalizacion} se define cada variable dependiente y la forma en que se medirá.
@@ -134,24 +129,22 @@ Se eligió la escala de \textcite{Jian2000} porque es un instrumento multirreact
 
 \subsection{Hipótesis estadísticas}
 
-Sean $\mu_{P}$ y $\mu_{M}$ las medias obtenidas por los participantes con la plataforma y con los medios actuales, respectivamente.
+Sean $\mu_{T,P}$ y $\mu_{T,M}$ los tiempos medios de búsqueda obtenidos por los participantes con la plataforma y con los medios actuales, respectivamente, y $\mu_{C,P}$ y $\mu_{C,M}$ las puntuaciones medias de confianza percibida con la plataforma y con los medios actuales. Puesto que la hipótesis de investigación afirma que la plataforma produce ambos efectos de manera simultánea, la hipótesis alternativa se expresa como la conjunción de las dos condiciones y la hipótesis nula como su negación:
 
-\textbf{Hipótesis 1 (tiempo de búsqueda).}
 \begin{itemize}
-    \item $H_0$: la plataforma no reduce el tiempo de búsqueda frente a los medios actuales ($\mu_{P} \geq \mu_{M}$).
-    \item $H_1$: la plataforma reduce el tiempo de búsqueda frente a los medios actuales ($\mu_{P} < \mu_{M}$).
-\end{itemize}
-
-\textbf{Hipótesis 2 (confianza percibida).}
-\begin{itemize}
-    \item $H_0$: la plataforma no aumenta la confianza percibida frente a los medios actuales ($\mu_{P} \leq \mu_{M}$).
-    \item $H_1$: la plataforma aumenta la confianza percibida frente a los medios actuales ($\mu_{P} > \mu_{M}$).
+    \item $H_1$: la plataforma reduce el tiempo de búsqueda \emph{y} aumenta la confianza percibida frente a los medios actuales
+    \[
+        H_1:\; (\mu_{T,P} < \mu_{T,M}) \;\wedge\; (\mu_{C,P} > \mu_{C,M}).
+    \]
+    \item $H_0$: la plataforma no reduce el tiempo de búsqueda \emph{o} no aumenta la confianza percibida frente a los medios actuales
+    \[
+        H_0:\; (\mu_{T,P} \geq \mu_{T,M}) \;\vee\; (\mu_{C,P} \leq \mu_{C,M}).
+    \]
 \end{itemize}
 
 % TODO: calcular el tamaño de muestra cuando se defina el diseño en la metodología.
-Dado que cada participante utilizará ambos medios, las hipótesis se contrastarán con una prueba $t$ de Student para muestras relacionadas, unilateral y con un nivel de significancia $\alpha = 0.05$. Si las diferencias no siguen una distribución normal (prueba de Shapiro-Wilk), se empleará la prueba de rangos con signo de Wilcoxon.
+Dado que cada participante utilizará ambos medios, cada una de las dos condiciones se evaluará con una prueba $t$ de Student para muestras relacionadas, unilateral y con un nivel de significancia $\alpha = 0.05$. Si las diferencias no siguen una distribución normal (prueba de Shapiro-Wilk), se empleará la prueba de rangos con signo de Wilcoxon. Como $H_1$ exige que se cumplan ambas condiciones, la decisión se tomará mediante una prueba de intersección-unión: $H_0$ se rechazará únicamente si las dos pruebas unilaterales resultan significativas. Este procedimiento conserva el nivel de significancia global en $\alpha = 0.05$ sin requerir correcciones por comparaciones múltiples \parencite{BergerHsu1996}. Si solo una de las condiciones resulta significativa, la hipótesis de investigación no se considerará confirmada, aunque el efecto observado sobre esa variable se reportará y discutirá.
 
 \subsection{Medición complementaria: usabilidad}
 
-La usabilidad no forma parte de las hipótesis, puesto que no es una de las variables cuya relación se contrasta, pero se medirá como evaluación complementaria en atención al quinto objetivo específico. Al concluir las tareas, estudiantes y arrendadores responderán la Escala de Usabilidad del Sistema \parencite[SUS;][]{Brooke1996}, de 10 reactivos, que produce una puntuación de 0 a 100. El resultado se reportará de forma descriptiva y se interpretará con respecto al promedio de referencia de 68 puntos \parencite{LewisSauro2018} y a la escala de adjetivos de \textcite{Bangor2008}. Este dato también ayudará a interpretar los resultados de las hipótesis; por ejemplo, una baja usabilidad podría explicar que la plataforma no reduzca el tiempo de búsqueda.
-\end{comment}
+La usabilidad no forma parte de la hipótesis, puesto que no es una de las variables cuya relación se contrasta, pero se medirá como evaluación complementaria en atención al quinto objetivo específico. Al concluir las tareas, estudiantes y arrendadores responderán la Escala de Usabilidad del Sistema \parencite[SUS;][]{Brooke1996}, de 10 reactivos, que produce una puntuación de 0 a 100. El resultado se reportará de forma descriptiva y se interpretará con respecto al promedio de referencia de 68 puntos \parencite{LewisSauro2018} y a la escala de adjetivos de \textcite{Bangor2008}. Este dato también ayudará a interpretar los resultados del contraste de la hipótesis; por ejemplo, una baja usabilidad podría explicar que la plataforma no reduzca el tiempo de búsqueda.

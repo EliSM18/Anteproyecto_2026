@@ -121,13 +121,10 @@
             	{\large \bfseries \@author} \par
             	\vskip 30\p@
             	\vskip 30\p@
-            	% Bloque de asesores oculto (no aparece en Avance_de_Protocolo.pdf).
-            	% Para mostrarlo de nuevo, descomente las siguientes líneas:
-%            	{\large \bfseries Bajo la dirección de:}\\
-%            	\vskip 5\p@
-%            	{\large \bfseries \@advisoryy}\\
-%               {\large \bfseries \@advisorxx}\\
-%            	\vskip 30\p@
+            	{\large \bfseries Bajo la dirección de:}\\
+            	\vskip 4.78\p@ % iguala la separación de "Presenta:" con el primer nombre
+            	{\dimen@=\baselineskip \large \bfseries \baselineskip=\dimen@ \@advisorxx} \par
+            	\vskip 30\p@
             	{\normalsize Miahuatlán de Porfirio Díaz, Oaxaca. \@degreemonth{} de \@degreeyear}
 %            	\end{flushright}
             	\vfil

@@ -1,10 +1,10 @@
 # Anteproyecto 
 
-**Desarrollo de plataforma web para gestión de viviendas en arrendamiento en Miahuatlán de Porfirio Díaz, Oaxaca**
+**Plataforma web con geolocalización y verificación para la búsqueda de vivienda en renta de estudiantes foráneos en Miahuatlán de Porfirio Díaz, Oaxaca: desarrollo y evaluación**
 
 Anteproyecto de tesis para obtener el título de Licenciatura en Informática en la Universidad de la Sierra Sur (UNSIS).
 
-- **Autoras:** Castellanos Pacheco Mayra y Sánchez Martínez Elisa
+- **Autoras:** Mayra Castellanos Pacheco y Elisa Sánchez Martínez
 - **Formato:** clase `huthesis` 
 - **Referencias:** APA 7 en español con `biblatex` + `biber`
 

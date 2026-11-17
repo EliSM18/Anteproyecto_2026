@@ -23,11 +23,14 @@
 % ===================== Antecedentes =====================
 
 % --- Fuentes primarias ---
-@online{INEGI2020DataMexico,
-  author       = {{Instituto Nacional de Estadística y Geografía}},
+% Data México es una plataforma de la Secretaría de Economía que difunde datos
+% del Censo de Población y Vivienda 2020 (INEGI); el autor institucional es la SE.
+% TODO: agregar urldate con la fecha de consulta.
+@online{SE2020DataMexico,
+  author       = {{Secretaría de Economía}},
   title        = {Miahuatlán de Porfirio Díaz: Economía, empleo, equidad, calidad de vida y educación},
   year         = {2020},
-  organization = {Data México; Secretaría de Economía},
+  organization = {Data México},
   url          = {https://www.economia.gob.mx/datamexico/es/profile/geo/miahuatlan-de-porfirio-diaz?travelTime=schoolMean}
 }
 
@@ -103,7 +106,8 @@
   author      = {Valenzuela Robles, C. L.},
   title       = {Desarrollo de un sistema web para optimizar el control de pagos por arrendamiento de locales para la {Sub} {Gerencia} de {Recaudación} de la {Municipalidad} {Provincial} de {Pasco}},
   year        = {2024},
-  type        = {Tesis},
+  % TODO: verificar en el repositorio el grado exacto (p. ej., "Tesis de licenciatura").
+  type        = {Tesis de licenciatura},
   institution = {Universidad Nacional Daniel Alcides Carrión},
   url         = {http://repositorio.undac.edu.pe/handle/undac/4461}
 }
@@ -180,4 +184,71 @@
   number = {4},
   pages = {283--319},
   doi = {10.1214/ss/1032280304}
+}
+
+
+% ===================== Confianza y verificación (revisión metodológica) =====================
+
+@article{McKnight2002,
+  author = {McKnight, D. Harrison and Choudhury, Vivek and Kacmar, Charles},
+  title = {Developing and validating trust measures for e-commerce: An integrative typology},
+  journal = {Information Systems Research},
+  year = {2002},
+  volume = {13},
+  number = {3},
+  pages = {334--359},
+  doi = {10.1287/isre.13.3.334.81}
+}
+
+@article{Gefen2003,
+  author = {Gefen, David and Karahanna, Elena and Straub, Detmar W.},
+  title = {Trust and {TAM} in online shopping: An integrated model},
+  journal = {MIS Quarterly},
+  year = {2003},
+  volume = {27},
+  number = {1},
+  pages = {51--90},
+  doi = {10.2307/30036519}
+}
+
+@article{Ert2016,
+  author = {Ert, Eyal and Fleischer, Aliza and Magen, Nathan},
+  title = {Trust and reputation in the sharing economy: The role of personal photos in {Airbnb}},
+  journal = {Tourism Management},
+  year = {2016},
+  volume = {55},
+  pages = {62--73},
+  doi = {10.1016/j.tourman.2016.01.013}
+}
+
+@article{Lawshe1975,
+  author = {Lawshe, C. H.},
+  title = {A quantitative approach to content validity},
+  journal = {Personnel Psychology},
+  year = {1975},
+  volume = {28},
+  number = {4},
+  pages = {563--575},
+  doi = {10.1111/j.1744-6570.1975.tb01393.x}
+}
+
+% ===================== Análisis estadístico =====================
+
+@book{Cohen1988,
+  author = {Cohen, Jacob},
+  title = {Statistical power analysis for the behavioral sciences},
+  edition = {2},
+  year = {1988},
+  publisher = {Lawrence Erlbaum Associates}
+}
+
+@article{Faul2007,
+  author = {Faul, Franz and Erdfelder, Edgar and Lang, Albert-Georg and Buchner, Axel},
+  title = {{G*Power} 3: A flexible statistical power analysis program for the social, behavioral, and biomedical sciences},
+  journal = {Behavior Research Methods},
+  year = {2007},
+  volume = {39},
+  number = {2},
+  pages = {175--191},
+  doi = {10.3758/BF03193146}
 }

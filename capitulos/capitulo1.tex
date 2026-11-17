@@ -1,150 +1,272 @@
-\chapter{Introducción}
+\chapter{Protocolo de investigación}
 
 \section{Antecedentes}
 
-La búsqueda de vivienda en renta por parte de estudiantes universitarios que provienen de otras localidades distintas a Miahuatlán de Porfirio Díaz es un problema que ha sido abordado desde distintas perspectivas: el estudio del impacto de las universidades en el desarrollo local, el análisis del crecimiento urbano, el efecto de las plataformas digitales en el mercado de alquiler y el desarrollo de sistemas informáticos para la gestión de arrendamientos. En esta sección se presenta, en primer lugar, el panorama estadístico y territorial que enmarca el problema y, posteriormente, una síntesis crítica de las investigaciones previas más relevantes, con el propósito de identificar lo que ya se conoce, las limitaciones de las propuestas existentes y la brecha que el presente proyecto busca atender.
+La búsqueda de vivienda en renta por parte de estudiantes universitarios que provienen de otras localidades distintas a Miahuatlán de Porfirio Díaz es un problema que ha sido abordado desde distintas perspectivas: el estudio del impacto de las universidades en el desarrollo local, el análisis del crecimiento urbano, el efecto de las plataformas digitales en el mercado de alquiler, la confianza en las transacciones en línea entre particulares y el desarrollo de sistemas informáticos para la gestión de arrendamientos. En esta sección se presenta, en primer lugar, el panorama estadístico y territorial que enmarca el problema y, posteriormente, una síntesis crítica de las investigaciones previas más relevantes, con el propósito de identificar lo que ya se conoce, las limitaciones de las propuestas existentes y la brecha que el presente proyecto busca atender.
 
 \subsection{Panorama estadístico y territorial}
 
 De acuerdo con la Encuesta Nacional de Vivienda (ENVI) 2020, levantada mediante un muestreo probabilístico, bietápico, estratificado y por conglomerados de 55\,147 viviendas, de los 35.3 millones de viviendas particulares habitadas en México, el 16.4\,\% son rentadas; de estas 5.8 millones de viviendas en renta, únicamente el 54.0\,\% cuenta con un contrato de renta vigente \parencite{INEGI2021ENVI}. Es decir, casi la mitad de los arrendamientos del país se realiza sin un instrumento formal que dé certeza a arrendadores y arrendatarios. Asimismo, de acuerdo con el \textcite{INEGI2021ENVI}, el 21.1\,\% de los hogares (7.6 millones) reportó que alguno de sus integrantes necesita o planea rentar, comprar o construir una vivienda. Aunque la ENVI tiene representatividad nacional y estatal, no ofrece información a nivel municipal ni distingue la demanda específica de la población estudiantil.
 
-En el ámbito local, la información censal del \textcite{INEGI2020DataMexico}, difundida a través de la plataforma Data México, describe el perfil habitacional de Miahuatlán de Porfirio Díaz: viviendas particulares habitadas, promedio de ocupantes por vivienda, distribución de habitaciones y acceso a servicios como internet, agua y electricidad.
-% TODO: incorporar aquí las cifras concretas de Data México (viviendas habitadas, ocupantes por vivienda, % con internet).
+En el ámbito local, los datos del Censo de Población y Vivienda 2020 que difunde la \textcite{SE2020DataMexico} a través de la plataforma Data México describen el perfil habitacional de Miahuatlán de Porfirio Díaz.
+% TODO (revisión, Antecedentes 7): sustituir los corchetes por las cifras de Data México / Censo 2020.
+El municipio contaba en 2020 con [\textit{población total}] habitantes y [\textit{número}] viviendas particulares habitadas, con un promedio de [\textit{número}] ocupantes por vivienda; de ellas, [\textit{porcentaje}] eran rentadas y [\textit{porcentaje}] disponían de internet.
 Estos datos corresponden al corte censal de 2020 y no reflejan la oferta privada de renta ni la ubicación de los inmuebles disponibles. De forma complementaria, el Plan de Ordenamiento Territorial elaborado por el \textcite{SEINFRA2024} delimita las colonias del municipio, la cobertura de las redes de servicios básicos y la proximidad a nodos educativos como la Universidad de la Sierra Sur (UNSIS), con base en un diagnóstico territorial participativo y análisis cartográfico. Al ser un instrumento de planeación estático, no permite consultar la oferta de vivienda en renta, pero proporciona la base geográfica oficial para categorizar las zonas en las que se ubican los inmuebles.
 
 \subsection{La universidad como generadora de demanda habitacional en Miahuatlán de Porfirio Díaz}
 
-\textcite{ZepedaGarcia2019} examinaron cómo la llegada de la UNSIS ha transformado a Miahuatlán de Porfirio Díaz en un periodo aproximado de quince años, con el objetivo de valorar a la universidad como productora de capital humano y como impulsora de la economía local. Mediante una investigación de campo que recuperó testimonios de habitantes que presenciaron dichos cambios, complementada con análisis documental, las autoras encontraron que la llegada de estudiantes, profesores y personal administrativo modificó las condiciones de vida de la ciudad y generó una demanda creciente de servicios, entre ellos el alojamiento. Sus resultados, sin embargo, son de carácter cualitativo: no cuantifican la demanda de vivienda ni proponen mecanismos para organizarla. Este trabajo es relevante para el presente proyecto porque documenta, desde la investigación académica y en el mismo contexto geográfico, que la comunidad universitaria constituye un mercado permanente de demanda de vivienda en renta.
+\textcite{ZepedaGarcia2019} examinaron cómo la llegada de la UNSIS ha transformado a Miahuatlán de Porfirio Díaz en un periodo aproximado de quince años, con el objetivo de valorar a la universidad como productora de capital humano y como impulsora de la economía local. Mediante una investigación de campo que recuperó testimonios de habitantes que presenciaron dichos cambios, complementada con análisis documental, encontraron que la llegada de estudiantes, profesores y personal administrativo modificó las condiciones de vida de la ciudad y generó una demanda creciente de servicios, entre ellos el alojamiento. Sus resultados, sin embargo, son de carácter cualitativo: no cuantifican la demanda de vivienda ni proponen mecanismos para organizarla. Este trabajo es relevante para el presente proyecto porque documenta, en el mismo contexto geográfico, que la comunidad universitaria constituye una fuente de demanda de vivienda en renta.
 
 En una línea complementaria, \textcite{AvilaFlores2020} analizaron los factores del crecimiento urbano y del desarrollo sustentable en Miahuatlán de Porfirio Díaz durante el siglo \textsc{xxi}. A través de un análisis territorial, espacial y demográfico apoyado en Sistemas de Información Geográfica (SIG) y cartografía, estimaron la tasa de expansión urbana y la densidad de población, lo que les permitió identificar las zonas de mayor presión y expansión dentro del municipio. Su enfoque es macroscópico, por lo que no llega al nivel de la oferta inmobiliaria individual. Para esta investigación, dicho estudio aporta elementos para fundamentar el componente de geolocalización de la plataforma, al permitir identificar las zonas de expansión en las que resulta más necesario vincular la oferta de cuartos con los estudiantes.
 % TODO: incorporar una cifra concreta de este estudio (tasa de expansión urbana o densidad) tras revisar el texto completo.
 
 \subsection{Las plataformas digitales en el mercado de vivienda en alquiler}
 
-De acuerdo a un análisis de distribución geográfica de los distintos tipos de alojamiento ofertados en Airbnb en la Ciudad de México entre 2019 y 2023, así como sus precios y su relación con el parque habitacional tradicional, con datos de la plataforma InsideAirbnb y del Censo de Población y Vivienda, la pandemia por COVID-19 redujo la oferta de alojamiento temporal en 2021 sin que los precios disminuyeran. Posteriormente la plataforma se recuperó hasta superar la expansión observada a inicios de 2019, en algunos territorios más del 60\,\% del parque habitacional se encuentra inserto en la plataforma, con concentraciones en las alcaldías Miguel Hidalgo y Cuajimalpa. La propia autora reconoce que la evidencia es insuficiente para determinar los efectos de esta forma de alquiler en cada municipio y que en México la investigación sobre el fenómeno es escasa; además, su análisis se centra en el alquiler turístico de corta estancia en una metrópoli \parencite{GarridoRodriguez2025}. Para el presente proyecto, este trabajo muestra que las plataformas digitales reorganizan efectivamente el mercado de alquiler y que el análisis geográfico de la oferta es una herramienta útil para comprenderlo, aunque no existen estudios equivalentes para el alquiler de mediana estancia dirigido a estudiantes en municipios pequeños.
+\textcite{GarridoRodriguez2025} analizó la distribución geográfica y los precios de los alojamientos ofertados en Airbnb en la Ciudad de México entre 2019 y 2023, con datos de InsideAirbnb y del Censo de Población y Vivienda. Encontró que la oferta se recuperó tras la pandemia hasta superar la de 2019 y que en algunos territorios más del 60\,\% del parque habitacional se encuentra inserto en la plataforma. Su análisis se limita al alquiler turístico de corta estancia en una metrópoli, por lo que su pertinencia para este proyecto es indirecta: sugiere que las plataformas digitales reorganizan el mercado de alquiler y que el análisis geográfico de la oferta es útil para comprenderlo, aunque no se identificaron estudios equivalentes para el alquiler de mediana estancia dirigido a estudiantes en municipios pequeños.
+
+\subsection{Confianza y verificación en plataformas entre particulares}
+
+La confianza percibida es una de las dos variables que contrasta la hipótesis de este proyecto, por lo que se revisaron los trabajos que la estudian en el comercio en línea y en las plataformas entre particulares. \textcite{McKnight2002} propusieron y validaron empíricamente un conjunto de medidas de confianza para el comercio electrónico que distingue la disposición a confiar, la confianza basada en la institución (la percepción de que existen estructuras y garantías que protegen al usuario) y las creencias de confianza sobre el vendedor (competencia, benevolencia e integridad). Esta tipología es relevante porque separa la confianza en el medio de la confianza en la contraparte, que en el caso de la renta de vivienda es el arrendador. \textcite{Gefen2003} integraron la confianza en el modelo de aceptación de tecnología y mostraron, con compradores en línea, que la confianza influye en la intención de uso junto con la utilidad y la facilidad de uso percibidas, y que se apoya en la percepción de garantías estructurales del sitio. En el ámbito de la economía colaborativa, \textcite{Ert2016} mostraron que en Airbnb las señales visuales sobre el anfitrión, como su fotografía, se asocian con el precio y la probabilidad de elegir un alojamiento, mientras que las calificaciones de reputación tuvieron un efecto menor, lo que sugiere que los elementos que el usuario interpreta como indicios de la identidad y honestidad del oferente pesan en su decisión.
+% TODO (revisión, Antecedentes 2 y 3): agregar literatura sobre mecanismos de verificación
+% (insignias de identidad, validación de documentos, reseñas, reportes de usuarios) y datos
+% sobre fraude en renta de vivienda (p. ej., reportes de PROFECO, CONDUSEF o policía cibernética).
 
 \subsection{Sistemas web para la gestión de arrendamientos}
 
 El antecedente tecnológico más cercano a esta investigación es el de \textcite{MejiaAvecias2023}, quienes desarrollaron un sistema web para facilitar la obtención y distribución de información sobre departamentos en renta para estudiantes foráneos de la Escuela Superior de Tlahuelilpan, Hidalgo. A partir de información recabada con estudiantes de la zona, identificaron que la oferta se difundía principalmente por redes sociales, con información escasa, ambigua y dispersa, e incluso con publicaciones de más de un año de antigüedad sin actualizar. El desarrollo siguió la metodología ágil Scrum; los requerimientos se obtuvieron mediante entrevistas a estudiantes foráneos y el sistema se construyó con una arquitectura cliente-servidor empleando HTML, CSS, JavaScript, PHP y MySQL. Como resultado, presentaron el modelo de datos, el diagrama de módulos y doce interfaces que incluyen el registro de inmuebles, la búsqueda con filtros por ubicación, tamaño, servicios y costo, la reservación en línea y la comunicación entre arrendadores y estudiantes. Asimismo, al revisar plataformas existentes como Stukey, Roomgo o Spotahome, señalan que estas se concentran en la Ciudad de México y en otras ciudades grandes del país. No obstante, el trabajo no reporta una evaluación empírica del sistema, como pruebas con usuarios, métricas de usabilidad o tiempos de búsqueda, y fue diseñado para el contexto de Tlahuelilpan. Este antecedente sirve como guía para definir el modelo de datos, los módulos y los filtros de búsqueda de la plataforma propuesta, la cual, a diferencia de este, contemplará la evaluación con usuarios y las condiciones propias de Miahuatlán de Porfirio Díaz.
+% TODO (revisión, Antecedentes 4): agregar otros desarrollos universitarios de vivienda estudiantil y
+% analizar las plataformas comerciales mencionadas (funciones, cobertura y mecanismos de verificación).
 
-Por su parte, \textcite{Valenzuela2024} desarrolló un sistema web para optimizar el control de pagos por arrendamiento de locales en la Sub Gerencia de Recaudación de la Municipalidad Provincial de Pasco, Perú, ante la deficiencia, lentitud y falta de trazabilidad del control manual de dichos pagos. Mediante un método deductivo e inductivo, con una población de 100 arrendatarios y una muestra de 20, evaluó los tiempos de procesamiento de pagos, la reducción de errores de registro y la generación de reportes, y concluyó que la implementación mejoró el control, la rapidez y la confiabilidad de los arrendamientos.
-% TODO: incorporar los porcentajes de mejora que reporta la tesis tras revisar el documento completo.
-Sin embargo, su lógica de negocio está orientada a locales comerciales administrados por una institución municipal y no al alojamiento estudiantil. Para el presente proyecto, este trabajo ofrece referencias técnicas sobre el modelado de la base de datos y de los flujos necesarios para gestionar contratos y pagos dentro de un sistema de rentas.
+De forma más lejana, \textcite{Valenzuela2024} desarrolló un sistema web para el control de pagos por arrendamiento de locales comerciales de la Municipalidad Provincial de Pasco, Perú, y reportó mejoras en la rapidez y confiabilidad del registro de pagos con una muestra de 20 arrendatarios. Aunque su objeto (pagos de locales municipales) es distinto del alojamiento estudiantil, se retoma únicamente como referencia para el modelado de datos de un sistema de rentas.
+% TODO (revisión, Antecedentes 9): ampliar la base a 20--30 fuentes, priorizando artículos arbitrados.
 
 \subsection{Síntesis y brecha identificada}
-Los estudios sobre Miahuatlán de Porfirio Díaz \parencite{AvilaFlores2020, ZepedaGarcia2019} demuestran que la presencia de la Universidad de la Sierra Sur (UNSIS) genera una demanda habitacional constante y que existen herramientas de análisis territorial para ubicarla; sin embargo, ninguno propone una solución que organice la oferta de vivienda. La literatura sobre plataformas digitales \parencite{GarridoRodriguez2025} muestra que estas reorganizan el mercado de alquiler, pero se ha concentrado en el alquiler turístico de las grandes ciudades. Finalmente, los sistemas web existentes \parencite{MejiaAvecias2023, Valenzuela2024} prueban la viabilidad técnica de centralizar la información de arrendamiento, pero fueron diseñados para otros contextos o tipos de inmueble y no reportan una evaluación con usuarios finales en el caso de la vivienda estudiantil.
+Los estudios sobre Miahuatlán de Porfirio Díaz \parencite{AvilaFlores2020, ZepedaGarcia2019} documentan que la presencia de la UNSIS genera demanda de vivienda y que existen herramientas de análisis territorial para ubicarla; sin embargo, ninguno propone una solución que organice la oferta. La literatura sobre plataformas digitales \parencite{GarridoRodriguez2025} sugiere que estas reorganizan el mercado de alquiler, pero se ha concentrado en el alquiler turístico de las grandes ciudades. Los estudios sobre confianza en línea \parencite{McKnight2002, Gefen2003, Ert2016} muestran que la confianza en el medio y en la contraparte influye en la decisión del usuario, pero no se identificaron trabajos que la midan en la búsqueda de vivienda estudiantil. Finalmente, los sistemas web existentes \parencite{MejiaAvecias2023, Valenzuela2024} muestran que es técnicamente posible centralizar la información de arrendamiento, pero fueron diseñados para otros contextos o tipos de inmueble y no reportan una evaluación con usuarios finales.
 
-En consecuencia, no se identificó una solución que integre la oferta de cuartos y departamentos en renta de Miahuatlán de Porfirio Díaz con información geográfica sobre colonias, servicios y cercanía a la UNSIS, dirigida a personas no residentes y evaluada con sus usuarios. Esta es la brecha que el presente proyecto busca atender.
+En consecuencia, no se identificó una solución que integre la oferta de cuartos y departamentos en renta de Miahuatlán de Porfirio Díaz con información geográfica sobre colonias, servicios y cercanía a la UNSIS, que incorpore mecanismos de verificación de arrendadores e inmuebles, dirigida a estudiantes no residentes y evaluada con sus usuarios. Esta es la brecha que el presente proyecto busca atender.
 
 \section{Planteamiento del problema}
 
-Miahuatlán de Porfirio Díaz, Oaxaca, se ha consolidado progresivamente como un importante centro comercial y académico de la región, lo que ha propiciado la llegada de personas provenientes de distintas localidades que se trasladan a este municipio por motivos laborales y educativos. Entre este sector de la población destacan los estudiantes de la Universidad de la Sierra Sur (UNSIS), cuya matrícula es de aproximadamente 2,294 estudiantes, de los cuales un porcentaje considerable requiere trasladarse temporalmente a Miahuatlán para continuar con su formación académica. Esta situación genera una demanda constante de viviendas en renta, principalmente entre quienes no cuentan con un lugar de residencia permanente en la localidad.
+Miahuatlán de Porfirio Díaz, Oaxaca, se ha consolidado progresivamente como un importante centro comercial y académico de la región, lo que ha propiciado la llegada de personas provenientes de distintas localidades. Entre este sector de la población destacan los estudiantes de la UNSIS, cuya matrícula es de 2294 estudiantes
+% TODO (revisión, Planteamiento 1): citar la fuente y fecha de la matrícula (Servicios Escolares, Anuario Estadístico ANUIES u otra) y agregar la referencia a bibliografia.bib.
+[\textit{fuente, ciclo escolar}], de los cuales el [\textit{porcentaje}]\,\% proviene de otras localidades
+% TODO (revisión, Planteamiento 2): obtener el porcentaje de estudiantes no residentes con Servicios Escolares o mediante el sondeo exploratorio.
+y requiere trasladarse temporalmente a Miahuatlán para continuar con su formación académica. Esta situación genera una demanda constante de viviendas en renta entre quienes no cuentan con un lugar de residencia permanente en la localidad.
 
-Actualmente, la difusión de la oferta de viviendas en renta se realiza principalmente mediante grupos de redes sociales, como Facebook, así como a través de anuncios físicos colocados en postes y espacios cercanos a las instalaciones de la universidad. Sin embargo, estos medios funcionan de manera independiente y no existe un canal centralizado que permita consultar, organizar y actualizar la información de los inmuebles disponibles. Esta dispersión dificulta el acceso a información confiable y oportuna, ya que las publicaciones pueden quedar desactualizadas, presentar datos incompletos o carecer de elementos que permitan verificar la identidad de los arrendadores y las condiciones reales de las viviendas ofertadas.
+Actualmente, la difusión de la oferta de viviendas en renta se realiza principalmente mediante grupos de redes sociales, como Facebook, así como a través de anuncios físicos colocados en postes y espacios cercanos a las instalaciones de la universidad.
+% TODO (revisión, Planteamiento 4): respaldar con un registro propio: número de grupos de Facebook activos, publicaciones por mes y antigüedad de las publicaciones y de los anuncios físicos.
+En una revisión exploratoria realizada por las autoras se identificaron [\textit{n}] grupos de Facebook dedicados a la renta en el municipio, con un promedio de [\textit{n}] publicaciones mensuales. Estos medios funcionan de manera independiente y no existe un canal centralizado que permita consultar, organizar y actualizar la información de los inmuebles disponibles. Esta dispersión dificulta el acceso a información confiable y oportuna, ya que las publicaciones pueden quedar desactualizadas, presentar datos incompletos o carecer de elementos que permitan verificar la identidad de los arrendadores y las condiciones reales de las viviendas ofertadas.
 
-Como consecuencia, las personas que buscan alojamiento, particularmente los estudiantes no residentes, enfrentan dificultades para localizar y comparar alternativas de vivienda de acuerdo con su presupuesto, ubicación, características y necesidades particulares. Esto incrementa el tiempo y esfuerzo dedicado al proceso de búsqueda, además de generar incertidumbre al momento de establecer contacto con los arrendadores. Asimismo, la falta de mecanismos de verificación y de información confiable aumenta el riesgo de ser víctimas de posibles fraudes, como ofertas de inmuebles inexistentes, publicaciones engañosas o viviendas cuyas condiciones no corresponden con lo anunciado, lo que puede ocasionar pérdidas económicas y afectar la experiencia de adaptación de los estudiantes a su nuevo entorno.
+Como consecuencia, los estudiantes no residentes enfrentan dificultades para localizar y comparar alternativas de vivienda de acuerdo con su presupuesto, ubicación, características y necesidades particulares. Esto incrementa el tiempo y esfuerzo dedicado al proceso de búsqueda, además de generar incertidumbre al momento de establecer contacto con los arrendadores. Asimismo, la falta de mecanismos de verificación expone a los estudiantes al riesgo de fraudes, como ofertas de inmuebles inexistentes, publicaciones engañosas o viviendas cuyas condiciones no corresponden con lo anunciado.
+% TODO (revisión, Planteamiento 3): documentar con el sondeo exploratorio (ver objetivo específico 1) cuántos estudiantes reportan haber sufrido o conocer casos de fraude o de ofertas engañosas.
+En un sondeo exploratorio con [\textit{n}] estudiantes de la UNSIS, el [\textit{porcentaje}]\,\% reportó haber encontrado ofertas falsas o con condiciones distintas a las anunciadas.
 
-En este contexto, se identifica la necesidad de contar con una solución tecnológica que centralice la oferta de viviendas en renta en Miahuatlán de Porfirio Díaz, facilite la búsqueda y comparación de inmuebles mediante criterios específicos y proporcione información organizada y actualizada. Asimismo, resulta importante incorporar mecanismos que contribuyan a generar mayor confianza entre arrendadores y arrendatarios, favoreciendo un proceso de búsqueda y selección de vivienda más accesible, eficiente y seguro, especialmente para la comunidad estudiantil de la Universidad de la Sierra Sur.
-¿En qué medida el diseño e implementación de una plataforma web centralizada con geolocalización y mecanismos de verificación de viviendas en arrendamiento puede optimizar los tiempos de búsqueda y aumentar el nivel de confianza percibida para la población en situación de movilidad académica y laboral?
+El problema tiene también un lado de oferta. Los arrendadores locales dependen de publicaciones que pierden visibilidad en pocos días dentro de los grupos de redes sociales y de anuncios físicos de alcance limitado, por lo que deben volver a publicar con frecuencia y reciben consultas de personas cuyas necesidades no corresponden con su inmueble. Una plataforma centralizada solo resulta útil si los arrendadores publican en ella; por ello, este proyecto considera también sus necesidades y las condiciones bajo las cuales estarían dispuestos a adoptar un canal nuevo y a someterse a un proceso de verificación.
+% TODO: confirmar esta descripción con las entrevistas a arrendadores (objetivo específico 1).
+
+En este contexto, se identifica la necesidad de contar con una solución tecnológica que centralice la oferta de viviendas en renta en Miahuatlán de Porfirio Díaz, facilite la búsqueda y comparación de inmuebles mediante criterios específicos, proporcione información organizada y actualizada e incorpore mecanismos de verificación que contribuyan a generar confianza entre arrendadores y estudiantes.
+
+\section{Preguntas de investigación}
+
+\subsection{Pregunta general}
+
+¿En qué medida el uso de una plataforma web centralizada, con geolocalización y verificación de inmuebles, reduce el tiempo de localización de ofertas y aumenta la confianza percibida de los estudiantes no residentes de la Universidad de la Sierra Sur, en comparación con los medios de difusión actuales?
+
+\subsection{Preguntas específicas}
+
+\begin{enumerate}
+    \item ¿Qué necesidades, criterios de búsqueda y riesgos reportan los estudiantes no residentes y los arrendadores?
+    \item ¿Qué mecanismos de verificación son viables y aceptables para arrendadores y estudiantes?
+    \item ¿Difieren el tiempo de localización de ofertas, la exactitud de la elección y la confianza percibida entre la plataforma y los medios actuales?
+    \item ¿Qué nivel de usabilidad percibida alcanza el prototipo?
+\end{enumerate}
 
 \section{Justificación}
 
-El presente proyecto se justifica en cuatro dimensiones: social, tecnológica, económica y metodológica.
+El presente proyecto se justifica en cuatro dimensiones (social, tecnológica, económica y metodológica) y se complementa con el análisis de su viabilidad y continuidad.
 
-\textbf{Social.} Los beneficiarios directos son los estudiantes no residentes de la Universidad de la Sierra Sur, cuya matrícula asciende a aproximadamente 2\,294 estudiantes, así como el personal docente y administrativo que se traslada temporalmente a Miahuatlán de Porfirio Díaz. Para esta población, la búsqueda de vivienda depende hoy de publicaciones dispersas en redes sociales y de anuncios físicos que no permiten verificar la existencia del inmueble ni la identidad del arrendador. Una plataforma que concentre la oferta y que incorpore mecanismos de verificación contribuye a reducir la exposición a ofertas engañosas o inexistentes y a que los estudiantes elijan su alojamiento con información suficiente sobre su ubicación, servicios y condiciones, lo que favorece su adaptación al municipio durante su formación académica.
+\textbf{Social.} Los beneficiarios directos son los estudiantes no residentes de la UNSIS, que representan el [\textit{porcentaje}]\,\% de una matrícula de 2294 estudiantes. Para esta población, la búsqueda de vivienda depende hoy de publicaciones dispersas en redes sociales y de anuncios físicos que no permiten verificar la existencia del inmueble ni la identidad del arrendador. Una plataforma que concentre la oferta y que incorpore mecanismos de verificación puede contribuir a reducir la exposición a ofertas engañosas o inexistentes y a que los estudiantes elijan su alojamiento con información suficiente sobre su ubicación, servicios y condiciones, lo que favorece su adaptación al municipio durante su formación académica.
 
-\textbf{Tecnológica.} Los sistemas web reportados en la literatura para la renta de vivienda estudiantil \parencite{MejiaAvecias2023} demuestran la viabilidad técnica de centralizar esta información, pero no integran componentes geográficos ni reportan una evaluación con usuarios finales. El proyecto aporta una plataforma que vincula cada inmueble con la delimitación oficial de colonias y la cobertura de servicios del Plan de Ordenamiento Territorial \parencite{SEINFRA2024}, así como con su distancia a la UNSIS, lo que permite filtrar y comparar opciones con criterios que actualmente no están disponibles en ningún medio de difusión local.
+\textbf{Tecnológica.} Los sistemas web reportados en la literatura para la renta de vivienda estudiantil \parencite{MejiaAvecias2023} muestran que es técnicamente posible centralizar esta información, pero no integran componentes geográficos ni reportan una evaluación con usuarios finales. El proyecto aporta una plataforma que vincula cada inmueble con la delimitación oficial de colonias y la cobertura de servicios del Plan de Ordenamiento Territorial \parencite{SEINFRA2024}, así como con su distancia a la UNSIS, lo que permite filtrar y comparar opciones con criterios que no se encontraron en los medios de difusión locales revisados.
 
-\textbf{Económica.} Para los arrendadores locales, la plataforma representa un canal formal de difusión de bajo costo que amplía la visibilidad de sus inmuebles hacia la comunidad universitaria, sin depender de la vigencia de una publicación en grupos de redes sociales. Para los arrendatarios, la posibilidad de comparar precios, servicios y ubicación en un solo lugar facilita la elección de la opción con mejor relación costo--beneficio para su presupuesto y reduce los gastos asociados a traslados y visitas a inmuebles que no cumplen lo anunciado. Asimismo, el registro estructurado de las condiciones de renta puede servir como referencia para formalizar acuerdos, en un país donde casi la mitad de las viviendas rentadas carece de contrato vigente \parencite{INEGI2021ENVI}.
+\textbf{Económica.} Para los arrendadores locales, la plataforma representa un canal de difusión de bajo costo que amplía la visibilidad de sus inmuebles hacia la comunidad universitaria, sin depender de la vigencia de una publicación en grupos de redes sociales. Para los estudiantes, la posibilidad de comparar precios, servicios y ubicación en un solo lugar facilita la elección de la opción con mejor relación costo--beneficio para su presupuesto. Como beneficio esperado, que no será medido en este estudio, se prevé una reducción de los gastos asociados a traslados y visitas a inmuebles que no cumplen lo anunciado. Asimismo, el registro estructurado de las condiciones de renta (precio, depósito, servicios incluidos y reglas) ofrece a ambas partes una referencia clara al momento de acordar la renta, en un país donde casi la mitad de las viviendas rentadas carece de contrato vigente \parencite{INEGI2021ENVI}. La plataforma no genera contratos ni sustituye la asesoría legal.
 
-\textbf{Metodológica.} A diferencia de los antecedentes revisados, el proyecto contempla la evaluación de la plataforma con sus usuarios mediante indicadores medibles, como el tiempo de búsqueda, la usabilidad percibida y la confianza en la información publicada. El protocolo de evaluación diseñado podrá reutilizarse en otros municipios con presencia universitaria y un mercado de renta informal similar al de Miahuatlán de Porfirio Díaz, para el cual no se identificaron estudios previos.
+\textbf{Metodológica.} A diferencia de los antecedentes revisados, el proyecto contempla la evaluación de la plataforma con sus usuarios mediante un diseño experimental e indicadores medibles: el tiempo de localización de ofertas, la exactitud de la elección, la confianza percibida y la usabilidad. El protocolo de evaluación diseñado podrá reutilizarse en otros municipios con presencia universitaria y un mercado de renta informal similar al de Miahuatlán de Porfirio Díaz, para el cual no se identificaron estudios previos.
+
+\textbf{Viabilidad.} El proyecto se desarrollará durante el periodo 2026--2027 con los recursos disponibles para las tesistas: equipo de cómputo propio, herramientas de desarrollo de código abierto y servicios de alojamiento web de bajo costo.
+% TODO (revisión, Justificación 4): confirmar el servicio de mapas y su costo (p. ej., OpenStreetMap con Leaflet, sin costo de licencia, frente a la API de Google Maps) y la disponibilidad de la cartografía del Plan de Ordenamiento Territorial en un formato utilizable (shapefile, GeoJSON).
+La cartografía de colonias proviene del Plan de Ordenamiento Territorial \parencite{SEINFRA2024} y la visualización geográfica se apoyará en un servicio de mapas [\textit{servicio elegido y costo}]. El acceso a los participantes se facilita porque las tesistas forman parte de la comunidad de la UNSIS; el acceso a los arrendadores se gestionará a partir de las ofertas publicadas en los medios actuales, solicitando su autorización para incluir sus inmuebles en la plataforma.
+
+\textbf{Continuidad.} Al concluir la tesis, la plataforma requiere que alguien mantenga vigente la oferta y atienda las verificaciones.
+% TODO (revisión, Justificación 5): definir quién operará la plataforma al concluir la tesis (p. ej., el Instituto de Informática, un área de servicios estudiantiles de la UNSIS o una asociación estudiantil) y confirmarlo con dicha instancia.
+Se propone transferir su operación a [\textit{instancia responsable}], junto con la documentación técnica y un manual de administración, y diseñar la plataforma de modo que los arrendadores actualicen la disponibilidad de sus inmuebles y las publicaciones sin actualizar caduquen automáticamente.
 
 \section{Objetivos}
 
-% TODO: confirmar el periodo de realización del proyecto (se asume 2026--2027).
 \subsection{Objetivo general}
 
-Evaluar el efecto de una plataforma web centralizada, con geolocalización y mecanismos de verificación de inmuebles, en el tiempo de búsqueda de vivienda en renta y en la confianza percibida por estudiantes no residentes de la Universidad de la Sierra Sur en Miahuatlán de Porfirio Díaz, Oaxaca, durante el periodo 2026--2027.
+Desarrollar una plataforma web centralizada, con geolocalización y verificación de inmuebles, y evaluar su efecto en el tiempo de localización de ofertas y en la confianza percibida de estudiantes no residentes de la Universidad de la Sierra Sur en Miahuatlán de Porfirio Díaz, Oaxaca, durante el periodo 2026--2027.
 
 \subsection{Objetivos específicos}
 
 \begin{enumerate}
-    \item Identificar las necesidades, criterios de búsqueda y riesgos que enfrentan los estudiantes no residentes de la UNSIS y los arrendadores locales en el proceso de renta de vivienda, mediante encuestas y entrevistas.
+    \item Identificar las necesidades, criterios de búsqueda y riesgos de estudiantes no residentes y arrendadores en el proceso de renta.
     \item Diseñar la arquitectura, el modelo de datos y los mecanismos de verificación de arrendadores e inmuebles de la plataforma, con base en los requerimientos identificados y en la delimitación territorial de colonias y servicios del municipio.
-    \item Implementar un prototipo funcional de la plataforma web que integre el registro de inmuebles, la búsqueda por criterios de precio, servicios y ubicación, y su visualización geográfica respecto a la UNSIS.
-    \item Comparar el tiempo de búsqueda y el nivel de confianza percibida de un grupo de estudiantes al localizar vivienda mediante la plataforma frente a los medios de difusión actuales.
-    \item Evaluar la usabilidad del prototipo con estudiantes y arrendadores mediante un instrumento estandarizado, como la Escala de Usabilidad del Sistema (SUS).
+    \item Implementar un prototipo funcional que integre registro de inmuebles, verificación de arrendadores e inmuebles, búsqueda por criterios y visualización geográfica.
+    \item Construir el conjunto de ofertas reales que alimentará ambas condiciones de la evaluación: recopilarlas, obtener la autorización de los arrendadores, geolocalizarlas y verificarlas.
+    \item Comparar el tiempo de localización de ofertas, la exactitud de la elección y la confianza percibida de un grupo de estudiantes al buscar vivienda mediante la plataforma frente a los medios de difusión actuales.
+    \item Evaluar la usabilidad percibida del prototipo con estudiantes y arrendadores mediante la escala SUS.
 \end{enumerate}
 
 \section{Hipótesis}
 
-La presente investigación tiene un enfoque cuantitativo y plantea una hipótesis de diferencia de grupos con alcance causal, ya que se manipula el medio con el que se realiza la búsqueda de vivienda y se mide su efecto en dos resultados observables \parencite{HernandezSampieri2018}.
+La presente investigación tiene un enfoque cuantitativo y emplea un diseño experimental intrasujetos con contrabalanceo: cada participante realiza la búsqueda con ambos medios, y el orden de uso se asigna al azar \parencite{HernandezSampieri2018}.
 
 \subsection{Hipótesis de investigación}
 
-El uso de una plataforma web centralizada, con geolocalización y mecanismos de verificación de inmuebles, reduce el tiempo de búsqueda de viviendas en renta y aumenta el nivel de confianza percibida de los estudiantes no residentes de la UNSIS en comparación con los medios de difusión actuales (grupos de Facebook y anuncios físicos). Elementos detectados para operacionalizar la hipótesis:
+El uso de una plataforma web centralizada, con geolocalización y mecanismos de verificación de inmuebles, reduce el tiempo de localización de ofertas de vivienda en renta y aumenta la confianza percibida de los estudiantes no residentes de la UNSIS en comparación con los medios de difusión actuales (grupos de Facebook y anuncios físicos). Elementos de la hipótesis:
 
 \begin{itemize}
     \item \textbf{Unidad de análisis:} estudiantes no residentes de la Universidad de la Sierra Sur que buscan o han buscado vivienda en renta en Miahuatlán de Porfirio Díaz.
-    \item \textbf{Variables:} el medio de búsqueda (independiente), el tiempo de búsqueda y la confianza percibida (dependientes).
-    \item \textbf{Relación lógica:} el medio de búsqueda \emph{reduce} el tiempo de búsqueda y \emph{aumenta} la confianza percibida.
+    \item \textbf{Variables:} el medio de búsqueda (independiente); el tiempo de localización de ofertas y la confianza percibida (dependientes); la exactitud de la elección (dependiente secundaria).
+    \item \textbf{Relación lógica:} el medio de búsqueda \emph{reduce} el tiempo de localización de ofertas y \emph{aumenta} la confianza percibida.
 \end{itemize}
 
 \subsection{Variables de investigación}
 
-\begin{description}
-    \item[Variable independiente.] Medio de búsqueda de vivienda, con dos niveles: (a) la plataforma web propuesta y (b) los medios de difusión actuales, representados por publicaciones de grupos de Facebook y fotografías de anuncios físicos.
-    \item[Variables dependientes.] Tiempo de búsqueda de ofertas de vivienda en arrendamiento y nivel de confianza percibida por el usuario.
-    \item[Variables de control.] Para que la diferencia observada se atribuya al medio de búsqueda y no a otros factores, se mantendrán constantes: el conjunto de ofertas (las mismas viviendas, recopiladas de los medios actuales, estarán disponibles en ambos medios), la tarea de búsqueda (mismos criterios de presupuesto, servicios y distancia a la UNSIS), el equipo de cómputo y la conexión a internet. Además, se alternará el orden en que cada participante utiliza los medios (contrabalanceo) y se registrará su experiencia previa en la búsqueda de vivienda y su frecuencia de uso de Facebook para considerarlas en el análisis.
-\end{description}
+En la Tabla~\ref{tab:operacionalizacion} se define cada variable y la forma en que se medirá o controlará.
 
-\subsection{Operacionalización de las variables dependientes}
-
-En la Tabla~\ref{tab:operacionalizacion} se define cada variable dependiente y la forma en que se medirá.
-
-% TODO: definir el tiempo límite por tarea tras la prueba piloto (se propone 10 minutos).
 \begin{table}[H]
 \centering
-\small
-\caption{Operacionalización de las variables dependientes.}
+\footnotesize
+\renewcommand{\baselinestretch}{1}\selectfont % interlineado sencillo en la tabla
+\caption{Operacionalización de las variables.}
 \label{tab:operacionalizacion}
-\begin{tabularx}{\textwidth}{>{\RaggedRight\arraybackslash}p{2.1cm} >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}p{2.6cm}}
+\begin{tabularx}{\textwidth}{>{\RaggedRight\arraybackslash}p{2.3cm} >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}p{2.7cm}}
 \toprule
 \textbf{Variable} & \textbf{Definición conceptual} & \textbf{Definición operacional} & \textbf{Indicador e instrumento} \\
 \midrule
-Tiempo de búsqueda &
-Lapso que una persona invierte desde que comienza a buscar vivienda hasta que identifica una oferta que satisface sus criterios. &
-Tiempo que tarda cada participante en completar una tarea estandarizada de búsqueda (localizar una vivienda que cumpla un presupuesto, servicios y distancia máxima a la UNSIS), medido desde el inicio de la tarea hasta que señala la oferta elegida. Las tareas no concluidas se registran con el tiempo límite. &
-Segundos por tarea. Bitácora de pruebas con cronómetro y grabación de pantalla. \\
+\multicolumn{4}{l}{\textit{Independiente}} \\
+Medio de búsqueda &
+Canal mediante el cual el estudiante consulta la oferta de vivienda en renta. &
+Dos niveles: (a) la plataforma web propuesta, con ofertas verificadas; (b) los medios actuales, reproducidos en un grupo privado de Facebook que replica las publicaciones originales y en un álbum con las fotografías de los anuncios físicos. &
+Condición asignada en cada tarea (nominal). \\
+\addlinespace
+\multicolumn{4}{l}{\textit{Dependientes}} \\
+Tiempo de localización de ofertas &
+Lapso que una persona invierte desde que comienza a consultar un medio hasta que identifica una oferta que satisface sus criterios. No incluye contactar al arrendador, visitar el inmueble ni cerrar el trato. &
+Tiempo que tarda cada participante en completar una tarea estandarizada (localizar una vivienda que cumpla un presupuesto, servicios y distancia máxima a la UNSIS), desde el inicio de la tarea hasta que señala la oferta elegida. Límite de 10 minutos por tarea. &
+Segundos por tarea. Bitácora con cronómetro y grabación de pantalla. \\
 \addlinespace
 Confianza percibida &
-Actitud de que un agente ayudará a alcanzar los objetivos de una persona en una situación caracterizada por incertidumbre y vulnerabilidad \parencite{LeeSee2004}. &
-Puntuación obtenida en la Escala de Confianza en Sistemas Automatizados \parencite{Jian2000}, traducida al español y adaptada para referirse al medio de búsqueda utilizado. Consta de 12 reactivos con escala Likert de 1 a 7; los cinco reactivos de desconfianza se invierten antes de promediar. &
-Puntuación media de 1 a 7. Cuestionario aplicado al terminar la tarea en cada medio. \\
+Disposición a depender de la información y de los arrendadores que presenta un medio, a partir de la creencia en su integridad, competencia y benevolencia \parencite{McKnight2002}. &
+Puntuación en una escala adaptada de las creencias de confianza de \textcite{McKnight2002}, con dos subescalas: confianza en las ofertas y los arrendadores (principal, usada en la hipótesis) y confianza en el medio (complementaria). Reactivos tipo Likert de 1 a 7. &
+Puntuación media de 1 a 7. Cuestionario anónimo aplicado al terminar la tarea en cada medio. \\
+\addlinespace
+Exactitud de la elección (secundaria) &
+Grado en que la oferta elegida satisface los criterios de la tarea. &
+Se registra si la oferta señalada cumple todos los criterios (acierto) o no (error), y si la tarea se concluyó dentro del tiempo límite. &
+Proporción de aciertos y tasa de tareas concluidas. \\
+\addlinespace
+\multicolumn{4}{l}{\textit{Control}} \\
+Conjunto de ofertas y tareas &
+Material de búsqueda equivalente en ambas condiciones. &
+Dos subconjuntos de ofertas equivalentes en número, precio y distribución geográfica, con dos tareas equivalentes, cruzados con el medio y el orden. &
+Diseño del material. \\
+\addlinespace
+Entorno de prueba &
+Condiciones físicas de la sesión. &
+Mismo equipo de cómputo, conexión, guion y moderador. &
+Protocolo de sesión. \\
+\addlinespace
+Experiencia previa &
+Familiaridad del participante con la búsqueda de vivienda y con Facebook. &
+Número de búsquedas de vivienda realizadas y frecuencia de uso de Facebook. &
+Cuestionario inicial; covariables en el análisis. \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-Se eligió la escala de \textcite{Jian2000} porque es un instrumento multirreactivo construido empíricamente, lo que permite estimar su consistencia interna (alfa de Cronbach) con los datos de este estudio. La traducción se validará mediante retrotraducción y una prueba piloto con estudiantes que no formen parte de la muestra.
+Se descartó la Escala de Confianza en Sistemas Automatizados \parencite{Jian2000}, propuesta en una versión previa, porque proviene del estudio de la automatización \parencite{LeeSee2004} y sus reactivos se refieren a la confiabilidad de un sistema, mientras que lo que preocupa al estudiante es si la oferta es real y el arrendador honesto; además, un grupo de Facebook no es un sistema automatizado. Las medidas de \textcite{McKnight2002}, construidas para el comercio electrónico, distinguen la confianza en el medio de la confianza en la contraparte y se ajustan mejor al constructo. Los reactivos se traducirán al español y se adaptarán al contexto de la renta; su validez de contenido se evaluará con un panel de expertos mediante la razón de validez de contenido \parencite{Lawshe1975}, y su consistencia interna (alfa de Cronbach) se estimará en una prueba piloto con estudiantes que no formen parte de la muestra.
 
 \subsection{Hipótesis estadísticas}
 
-Sean $\mu_{T,P}$ y $\mu_{T,M}$ los tiempos medios de búsqueda obtenidos por los participantes con la plataforma y con los medios actuales, respectivamente, y $\mu_{C,P}$ y $\mu_{C,M}$ las puntuaciones medias de confianza percibida con la plataforma y con los medios actuales. Puesto que la hipótesis de investigación afirma que la plataforma produce ambos efectos de manera simultánea, la hipótesis alternativa se expresa como la conjunción de las dos condiciones y la hipótesis nula como su negación:
+Sean $\mu_{T,P}$ y $\mu_{T,M}$ los tiempos medios de localización de ofertas obtenidos por los participantes con la plataforma y con los medios actuales, respectivamente, y $\mu_{C,P}$ y $\mu_{C,M}$ las puntuaciones medias de confianza en las ofertas y los arrendadores con la plataforma y con los medios actuales. Puesto que la hipótesis de investigación afirma que la plataforma produce ambos efectos de manera simultánea, la hipótesis alternativa se expresa como la conjunción de las dos condiciones y la hipótesis nula como su negación:
 
 \begin{itemize}
-    \item $H_1$: la plataforma reduce el tiempo de búsqueda \emph{y} aumenta la confianza percibida frente a los medios actuales
+    \item $H_1$: la plataforma reduce el tiempo de localización de ofertas \emph{y} aumenta la confianza percibida frente a los medios actuales
     \[
         H_1:\; (\mu_{T,P} < \mu_{T,M}) \;\wedge\; (\mu_{C,P} > \mu_{C,M}).
     \]
-    \item $H_0$: la plataforma no reduce el tiempo de búsqueda \emph{o} no aumenta la confianza percibida frente a los medios actuales
+    \item $H_0$: la plataforma no reduce el tiempo de localización de ofertas \emph{o} no aumenta la confianza percibida frente a los medios actuales
     \[
         H_0:\; (\mu_{T,P} \geq \mu_{T,M}) \;\vee\; (\mu_{C,P} \leq \mu_{C,M}).
     \]
 \end{itemize}
 
-% TODO: calcular el tamaño de muestra cuando se defina el diseño en la metodología.
-Dado que cada participante utilizará ambos medios, cada una de las dos condiciones se evaluará con una prueba $t$ de Student para muestras relacionadas, unilateral y con un nivel de significancia $\alpha = 0.05$. Si las diferencias no siguen una distribución normal (prueba de Shapiro-Wilk), se empleará la prueba de rangos con signo de Wilcoxon. Como $H_1$ exige que se cumplan ambas condiciones, la decisión se tomará mediante una prueba de intersección-unión: $H_0$ se rechazará únicamente si las dos pruebas unilaterales resultan significativas. Este procedimiento conserva el nivel de significancia global en $\alpha = 0.05$ sin requerir correcciones por comparaciones múltiples \parencite{BergerHsu1996}. Si solo una de las condiciones resulta significativa, la hipótesis de investigación no se considerará confirmada, aunque el efecto observado sobre esa variable se reportará y discutirá.
+\subsection{Resumen del diseño de la evaluación}
+
+El detalle del procedimiento se desarrollará en el capítulo de metodología; aquí se resumen las decisiones que sostienen la validez del contraste.
+
+\textbf{Material equivalente y sin arrastre.} Si las mismas viviendas y la misma tarea se presentaran en ambos medios, el participante recordaría en el segundo la respuesta encontrada en el primero; el contrabalanceo equilibra ese sesgo, pero no lo elimina. Por ello, se construirán dos subconjuntos de ofertas (A y B) y dos tareas equivalentes, y se cruzarán con el medio y con el orden, de modo que cada participante busque en un subconjunto distinto en cada medio. Las cuatro combinaciones de orden y subconjunto se asignarán al azar.
+
+\textbf{Condición de medios actuales.} Para que la comparación sea fiel, las publicaciones originales de Facebook se replicarán, con autorización de los arrendadores, en un grupo privado de Facebook en el que el participante podrá desplazarse y usar el buscador como lo haría normalmente; los anuncios físicos se presentarán como fotografías dentro del mismo grupo.
+
+\textbf{Verificación real.} Todas las ofertas que aparezcan como verificadas en la plataforma habrán pasado efectivamente por el mecanismo de verificación definido en el objetivo específico 2 (por ejemplo, validación de identidad del arrendador y visita al inmueble), para que la confianza medida responda al mecanismo y no solo a una etiqueta.
+% TODO (revisión, prioridad 3): definir en el diseño (objetivo 2) en qué consiste exactamente la verificación.
+
+\textbf{Control de la deseabilidad social.} Los cuestionarios serán anónimos, se seguirá un guion estandarizado y, de ser posible, las sesiones las conducirá un moderador ajeno al desarrollo de la plataforma.
+
+\textbf{Tiempo límite.} Las tareas no concluidas en 10 minutos se registrarán con el tiempo límite. Se reportará cuántos casos lo alcanzan y se realizará un análisis de sensibilidad excluyéndolos, para valorar el efecto de techo.
+% TODO: confirmar el tiempo límite tras la prueba piloto.
+
+\textbf{Tamaño de muestra.} Para una prueba $t$ pareada unilateral con $\alpha = 0.05$, potencia de 0.80 y un efecto mediano ($d = 0.5$; \cite{Cohen1988}), se requieren 27 participantes \parencite{Faul2007}. Como la prueba de intersección-unión exige que ambas pruebas resulten significativas, se busca una potencia de 0.90 en cada una, lo que eleva el requerimiento a 36 participantes; considerando un 10\,\% de pérdidas, se reclutarán al menos 40 estudiantes no residentes.
+% TODO: confirmar el cálculo en G*Power y ajustar el tamaño del efecto si la prueba piloto sugiere otro valor.
+
+\subsection{Análisis estadístico}
+
+Cada una de las dos condiciones de $H_1$ se evaluará con una prueba $t$ de Student para muestras relacionadas, unilateral y con $\alpha = 0.05$. Dado que los tiempos suelen tener una distribución asimétrica, el tiempo de localización se analizará tras una transformación logarítmica, definida de antemano; la prueba de rangos con signo de Wilcoxon se reportará como análisis de robustez. La decisión se tomará mediante una prueba de intersección-unión: $H_0$ se rechazará únicamente si las dos pruebas unilaterales resultan significativas, lo que conserva el nivel de significancia global en $\alpha = 0.05$ sin requerir correcciones por comparaciones múltiples \parencite{BergerHsu1996}. Si solo una de las condiciones resulta significativa, la hipótesis de investigación no se considerará confirmada, aunque el efecto observado sobre esa variable se reportará y discutirá.
+
+Además del valor $p$, se reportarán la diferencia de medias con su intervalo de confianza al 95\,\% y la $d$ de Cohen. La experiencia previa en la búsqueda de vivienda y la frecuencia de uso de Facebook se incorporarán como covariables en un modelo lineal mixto con el medio, el orden y el subconjunto de ofertas como efectos fijos y el participante como efecto aleatorio. La exactitud de la elección y la tasa de tareas concluidas se compararán entre medios con la prueba de McNemar y se reportarán de forma descriptiva.
+
+\subsection{Limitaciones del diseño}
+
+\begin{itemize}
+    \item \textbf{Efecto de paquete.} La variable independiente combina centralización, geolocalización y verificación; el diseño permite saber si la plataforma en conjunto produce el efecto, pero no cuál de sus componentes lo causa.
+    \item \textbf{Alcance del tiempo medido.} Se mide el tiempo para localizar una oferta en pantalla, no el tiempo total para conseguir vivienda, que incluye contactar al arrendador, visitar el inmueble y cerrar el trato.
+    \item \textbf{Situación simulada.} Las tareas se realizan en una sesión controlada y no en una búsqueda real, lo que limita la generalización de los resultados.
+\end{itemize}
 
 \subsection{Medición complementaria: usabilidad}
 
-La usabilidad no forma parte de la hipótesis, puesto que no es una de las variables cuya relación se contrasta, pero se medirá como evaluación complementaria en atención al quinto objetivo específico. Al concluir las tareas, estudiantes y arrendadores responderán la Escala de Usabilidad del Sistema \parencite[SUS;][]{Brooke1996}, de 10 reactivos, que produce una puntuación de 0 a 100. El resultado se reportará de forma descriptiva y se interpretará con respecto al promedio de referencia de 68 puntos \parencite{LewisSauro2018} y a la escala de adjetivos de \textcite{Bangor2008}. Este dato también ayudará a interpretar los resultados del contraste de la hipótesis; por ejemplo, una baja usabilidad podría explicar que la plataforma no reduzca el tiempo de búsqueda.
+La usabilidad no forma parte de la hipótesis, puesto que no es una de las variables cuya relación se contrasta, pero se medirá como evaluación complementaria en atención al sexto objetivo específico. Los estudiantes responderán la Escala de Usabilidad del Sistema \parencite[SUS;][]{Brooke1996} al concluir las tareas; los arrendadores la responderán tras realizar tareas propias de su rol (registrar un inmueble, completar la verificación y actualizar su disponibilidad). La escala consta de 10 reactivos y produce una puntuación de 0 a 100. El resultado se reportará de forma descriptiva y se interpretará con respecto al promedio de referencia de 68 puntos \parencite{LewisSauro2018} y a la escala de adjetivos de \textcite{Bangor2008}. Este dato también ayudará a interpretar los resultados del contraste de la hipótesis; por ejemplo, una baja usabilidad podría explicar que la plataforma no reduzca el tiempo de localización.
+
+\section{Matriz de congruencia}
+
+La Tabla~\ref{tab:congruencia} relaciona cada pregunta específica con su objetivo, su criterio de logro y la técnica con la que se obtendrá la evidencia.
+
+% TODO: sustituir los corchetes por los tamaños definitivos.
+\begin{table}[H]
+\centering
+\footnotesize
+\renewcommand{\baselinestretch}{1}\selectfont % interlineado sencillo en la tabla
+\caption{Matriz de congruencia.}
+\label{tab:congruencia}
+\begin{tabularx}{\textwidth}{>{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X}
+\toprule
+\textbf{Pregunta específica} & \textbf{Objetivo específico} & \textbf{Hipótesis o criterio de logro} & \textbf{Técnica y evidencia} \\
+\midrule
+¿Qué necesidades, criterios y riesgos reportan estudiantes y arrendadores? & 1. Identificar necesidades, criterios de búsqueda y riesgos & Lista priorizada de requisitos & Encuesta a [\textit{n}] estudiantes; entrevistas a [\textit{n}] arrendadores \\
+\addlinespace
+¿Qué mecanismos de verificación son viables? & 2. Diseñar arquitectura, modelo de datos y verificación & Especificación del mecanismo aceptada por ambas partes & Revisión de literatura; prototipos; validación con usuarios \\
+\addlinespace
+¿El prototipo cumple los requisitos? & 3. Implementar el prototipo con registro, verificación, búsqueda y mapa & Requisitos funcionales verificados & Pruebas funcionales \\
+\addlinespace
+¿Con qué ofertas se evalúa? & 4. Construir el conjunto de ofertas reales verificadas & [\textit{n}] ofertas autorizadas, geolocalizadas y verificadas & Recopilación en campo; consentimiento de arrendadores \\
+\addlinespace
+¿La plataforma reduce el tiempo y aumenta la confianza? & 5. Comparar tiempo, exactitud y confianza entre medios & $H_1$: menor tiempo y mayor confianza con la plataforma & Experimento intrasujetos con al menos 40 participantes; $t$ pareada (Wilcoxon como robustez); intersección-unión, $\alpha = 0.05$ \\
+\addlinespace
+¿Qué usabilidad percibida alcanza? & 6. Evaluar la usabilidad con estudiantes y arrendadores & SUS igual o mayor que 68 & Escala SUS; estadística descriptiva \\
+\bottomrule
+\end{tabularx}
+\end{table}

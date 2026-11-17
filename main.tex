@@ -14,7 +14,7 @@
 \usepackage{graphicx}
 \usepackage{xcolor,colortbl}
 \usepackage{rotating}
-\usepackage{times}
+\usepackage{lmodern} % fuentes Latin Modern en codificación T1 (acentos copiables y buscables en el PDF)
 \usepackage{pdflscape}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -24,7 +24,7 @@
 \usepackage{mathrsfs}
 \usepackage[spanish]{babel}
 %\usepackage[print]{pdfscreen}
-\usepackage{ae}
+% \usepackage{ae} % ELIMINADO: forzaba fuentes OT1 y anulaba fontenc T1 (acentos no copiables en el PDF)
 \usepackage{array}
 \usepackage{textcomp}
 \usepackage{amsmath}
@@ -147,8 +147,8 @@ backgroundcolor=\color{gray75},
 
 
 %------------ Informacin de la Tesis
-\title{\LARGE Desarrollo de plataforma web para gestión de viviendas en arrendamiento en Miahuatlán de Porfirio Díaz, Oaxaca}	%---> Titulo
-\author{Castellanos Pacheco Mayra \\ Sánchez Martínez Elisa}												%---> Autor
+\title{\Large Plataforma web con geolocalización y verificación para la búsqueda de vivienda en renta de estudiantes foráneos en Miahuatlán de Porfirio Díaz, Oaxaca: desarrollo y evaluación}	%---> Titulo
+\author{Mayra Castellanos Pacheco \\ Elisa Sánchez Martínez}												%---> Autor
 \usepackage[spanish]{babel}
 
 
@@ -159,6 +159,7 @@ backgroundcolor=\color{gray75},
 \department{Instituto de Informática}														%---> Nombre del departamento
 \university{Universidad de la Sierra Sur}													%---> Nombre universidad
 \place{Miahuatlán de Porfirio Díaz Oaxaca, México.}											%---> Lugar
+% TODO: confirmar que el reglamento de titulación permite cuatro directores/asesores.
 \advisor{Asesores}{M.C.C. Eliezer Alcázar Silva \\ M.C.C. Lirio Ruiz Guerra \\ M.F. Máximo Jorge Saavedra García \\ M.T.E. Everardo de Jesús Pacheco Antonio }	
 %Algoritmo
 \definecolor{dkgreen}{rgb}{0,0.6,0}

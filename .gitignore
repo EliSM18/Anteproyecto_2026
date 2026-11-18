@@ -31,6 +31,9 @@
 # --- PDF generado (se obtiene compilando main.tex) ---
 main.pdf
 
+# --- Archivo de matriz de cambios (se obtiene compilando matriz_control_cambios.tex) ---
+matriz_control_cambios.pdf
+
 # --- Archivos temporales de editores y del sistema ---
 *~
 *.bak
@@ -44,5 +47,8 @@ desktop.ini
 
 # --- Materiales del curso (no forman parte del documento) ---
 Unidad-2-Estructura-del-Anteproyecto-de-Investigacion.pdf
+Revision_metodologica_plataforma_arrendamiento.pdf
 Tabla de Fuentes.pdf
 Ejercicio de citas.odt
+ejemplo_APEX.pdf
+ejemplo_APEX.tex

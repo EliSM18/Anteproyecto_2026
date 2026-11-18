@@ -1,0 +1,80 @@
+MATRIZ DE CONTROL DE CAMBIOS DEL ANTEPROYECTO DE TESIS
+Formato en LaTeX - Licenciatura en Informática, Universidad de la Sierra Sur
+=========================================================================
+
+CONTENIDO
+
+  matriz_control_cambios.tex   Plantilla para llenar. Es el único archivo que
+                               deben editar.
+  matrizcambios.sty            Estilo del formato. No lo modifiquen; debe
+                               estar en la misma carpeta que el .tex.
+  ejemplo_APEX.tex             Ejemplo resuelto (extracto). Las acciones,
+                               páginas, fechas y cifras son ilustrativas.
+  ejemplo_APEX.pdf             El ejemplo ya compilado, como referencia.
+
+
+CÓMO USARLO
+
+  1. Suban la carpeta completa a Overleaf (o ábranla en su editor local).
+  2. Compilen matriz_control_cambios.tex con pdfLaTeX. Si la tabla ocupa
+     varias páginas, compilen dos veces.
+  3. Llenen los datos de identificación al inicio del archivo.
+  4. Escriban una línea \observacion por cada observación del reporte del
+     profesor, en el mismo orden. Cada línea lleva 8 argumentos:
+
+       \observacion{Núm.}{Sección}{Observación}{Acción realizada}
+                   {Ubicación}{Estado}{Justificación}{Validación}
+
+  5. En el argumento Estado usen solo uno de estos comandos:
+
+       \Atendida     \Parcial     \NoAtendida     \Pendiente
+
+     Colorean la celda y se cuentan solos en el resumen final.
+
+  6. Dentro de una celda, separen párrafos con \newline.
+
+
+REGLAS PRINCIPALES
+
+  - Una fila por cada observación del reporte, incluidas las de forma y
+    referencias. Una observación sin fila se considera no atendida.
+  - Acción realizada: qué se cambió, en pasado y con datos concretos. Si
+    cambian la pregunta, un objetivo o la hipótesis, transcriban el texto
+    anterior y el nuevo (\textbf{Antes:} ... \newline \textbf{Después:} ...).
+  - Ubicación: sección, página y, si aplica, tabla, figura o anexo de la
+    nueva versión.
+  - Todo estado distinto de \Atendida requiere justificación. Discrepar del
+    profesor es válido si se argumenta y si el asesor respalda el argumento.
+  - Si una observación se repite, atiéndanla una vez y en las demás
+    escriban "Ver P-3" (o el número que corresponda).
+  - La columna "Dictamen del profesor" se genera vacía; no la llenen.
+
+
+VALIDACIÓN DEL ASESOR
+
+  Antes de entregar, al menos uno de los asesores del proyecto revisa la
+  nueva versión y esta matriz. En la columna Validación escriban el nombre
+  o las iniciales del asesor que aprobó cada fila; si el asesor prefiere
+  rubricar a mano sobre la versión impresa, dejen ese argumento vacío: {}
+  Las filas que el asesor no valide deben corregirse antes de la entrega.
+  El asesor firma en el cuadro de firmas al final del documento.
+
+
+QUÉ SE ENTREGA
+
+  1. La nueva versión del anteproyecto en PDF, con los cambios resaltados
+     (por ejemplo, con el paquete changes o con texto de color).
+  2. Esta matriz compilada en PDF, con la firma de al menos un asesor.
+  3. Los anexos de evidencia citados en la matriz: oficios, cartas de
+     apoyo, actas de entrevista, capturas.
+
+
+PROBLEMAS FRECUENTES
+
+  - "File matrizcambios.sty not found": el .sty no está en la misma
+    carpeta que el .tex.
+  - Error al compilar una fila: revisen que la línea \observacion tenga
+    exactamente 8 pares de llaves, aunque alguno esté vacío {}.
+  - Los símbolos %, & y # deben escribirse \%, \& y \#.
+  - El resumen muestra 0: el estado no se escribió con uno de los cuatro
+    comandos (\Atendida, \Parcial, \NoAtendida, \Pendiente).

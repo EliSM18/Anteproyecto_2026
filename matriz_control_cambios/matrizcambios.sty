@@ -1,0 +1,171 @@
+% =====================================================================
+%  matrizcambios.sty
+%  Estilo para la matriz de control de cambios del anteproyecto de tesis
+%  Licenciatura en Informática, Universidad de la Sierra Sur
+%
+%  No es necesario modificar este archivo. Todo se llena en
+%  matriz_control_cambios.tex
+% =====================================================================
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{matrizcambios}[2026/11/17 Matriz de control de cambios]
+
+% ---------- Codificación, idioma y fuente ----------
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}
+\IfFileExists{spanish.ldf}
+  {\RequirePackage[spanish,es-nodecimaldot,es-noshorthands]{babel}}
+  {\RequirePackage[english]{babel}}
+
+% ---------- Página: carta horizontal ----------
+\RequirePackage[letterpaper,landscape,margin=1.6cm,includefoot,footskip=0.8cm]{geometry}
+
+% ---------- Tablas y color ----------
+\RequirePackage[table]{xcolor}
+\RequirePackage{array}
+\RequirePackage{longtable}
+\RequirePackage{ragged2e}
+\RequirePackage{xfp}
+\RequirePackage{fancyhdr}
+
+\definecolor{encabezado}{HTML}{DCE3EE}
+\definecolor{edoAtendida}{HTML}{E5F4E4}
+\definecolor{edoParcial}{HTML}{F9EEDA}
+\definecolor{edoNoAtendida}{HTML}{E7F1FB}
+\definecolor{edoPendiente}{HTML}{F9ECE7}
+\definecolor{titulo}{HTML}{1F2A44}
+\definecolor{gris}{HTML}{6B7280}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{4pt}
+\setlength{\arrayrulewidth}{0.4pt}
+
+% ---------- Pie de página ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{gris}Matriz de control de cambios del anteproyecto de tesis}
+\fancyfoot[R]{\footnotesize\color{gris}Página \thepage}
+
+% ---------- Datos de identificación ----------
+\makeatletter
+\newcommand{\TituloProyecto}[1]{\gdef\mc@titulo{#1}}
+\newcommand{\Tesistas}[1]{\gdef\mc@tesistas{#1}}
+\newcommand{\Asesores}[1]{\gdef\mc@asesores{#1}}
+\newcommand{\AsesorValida}[1]{\gdef\mc@asesorvalida{#1}}
+\newcommand{\Profesor}[1]{\gdef\mc@profesor{#1}}
+\newcommand{\VersionRevisada}[1]{\gdef\mc@vrevisada{#1}}
+\newcommand{\VersionEntregada}[1]{\gdef\mc@ventregada{#1}}
+\newcommand{\TotalObservaciones}[1]{\gdef\mc@totalobs{#1}}
+\TituloProyecto{}\Tesistas{}\Asesores{}\AsesorValida{}\Profesor{}
+\VersionRevisada{}\VersionEntregada{}\TotalObservaciones{}
+
+% ---------- Encabezado del documento ----------
+\newcommand{\EncabezadoMatriz}{%
+  \begin{center}
+    {\LARGE\bfseries\color{titulo}Matriz de control de cambios del anteproyecto de tesis\par}
+    \vspace{3pt}
+    {\small\color{gris}Respuesta a las observaciones del profesor de Metodología de la
+     Investigación $\cdot$ Licenciatura en Informática, Universidad de la Sierra Sur\par}
+  \end{center}
+  \vspace{4pt}}
+
+\newcommand{\Seccion}[1]{\par\vspace{8pt}{\large\bfseries\color{titulo}#1\par}\vspace{2pt}}
+
+\newcommand{\DatosIdentificacion}{%
+  \Seccion{Datos de identificación}
+  \begin{tabular}{|>{\RaggedRight\arraybackslash}p{6.2cm}|>{\RaggedRight\arraybackslash}p{15.6cm}|}
+    \hline
+    \rowcolor{encabezado}\textbf{Campo} & \textbf{Contenido} \\ \hline
+    Título del anteproyecto (versión nueva) & \mc@titulo \\ \hline
+    Tesistas & \mc@tesistas \\ \hline
+    Asesores del proyecto & \mc@asesores \\ \hline
+    Asesor que valida los cambios & \mc@asesorvalida \\ \hline
+    Profesor de la asignatura & \mc@profesor \\ \hline
+    Versión revisada y fecha del reporte & \mc@vrevisada \\ \hline
+    Versión entregada y fecha & \mc@ventregada \\ \hline
+    Total de observaciones del reporte & \mc@totalobs \\ \hline
+  \end{tabular}\par}
+
+% ---------- Estados (colorean la celda y se cuentan solos) ----------
+\newcounter{nAtendida}\newcounter{nParcial}\newcounter{nNoAtendida}\newcounter{nPendiente}
+\newcommand{\Atendida}{\cellcolor{edoAtendida}\stepcounter{nAtendida}Atendida}
+\newcommand{\Parcial}{\cellcolor{edoParcial}\stepcounter{nParcial}Atendida parcialmente}
+\newcommand{\NoAtendida}{\cellcolor{edoNoAtendida}\stepcounter{nNoAtendida}No atendida (justificada)}
+\newcommand{\Pendiente}{\cellcolor{edoPendiente}\stepcounter{nPendiente}Pendiente (en gestión)}
+
+% ---------- Matriz ----------
+% Anchos de columna (suman con los márgenes el ancho de la hoja horizontal)
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newcommand{\mc@encabezado}{%
+  \rowcolor{encabezado}
+  \textbf{Núm.} & \textbf{Sección} & \textbf{Observación del profesor (resumen)} &
+  \textbf{Acción realizada} & \textbf{Ubicación en la nueva versión} & \textbf{Estado} &
+  \textbf{Justificación o comentario} & \textbf{Validación del asesor} &
+  \textbf{Dictamen del profesor} \\}
+
+\newenvironment{matriz}{%
+  \Seccion{Matriz de control de cambios}
+  \footnotesize
+  \begin{longtable}{|L{1.0cm}|L{2.0cm}|L{3.6cm}|L{4.4cm}|L{2.0cm}|L{1.9cm}|L{2.8cm}|L{1.7cm}|L{1.6cm}|}
+    \hline
+    \mc@encabezado
+    \endfirsthead
+    \multicolumn{9}{l}{\itshape\color{gris}Continuación de la página anterior}\\ \hline
+    \mc@encabezado
+    \endhead
+    \hline
+    \multicolumn{9}{r}{\itshape\color{gris}Continúa en la página siguiente}\\
+    \endfoot
+    \hline
+    \endlastfoot}
+  {\end{longtable}\normalsize}
+
+% \observacion{Núm.}{Sección}{Observación}{Acción}{Ubicación}{Estado}{Justificación}{Validación}
+\newcommand{\observacion}[8]{\hline #1 & #2 & #3 & #4 & #5 & #6 & #7 & #8 & \\}
+
+% ---------- Resumen automático ----------
+\newcommand{\mc@total}{\numexpr\value{nAtendida}+\value{nParcial}+\value{nNoAtendida}+\value{nPendiente}\relax}
+\newcommand{\mc@pct}[1]{%
+  \ifnum\mc@total>0
+    \fpeval{round(100*\value{#1}/(\value{nAtendida}+\value{nParcial}+\value{nNoAtendida}+\value{nPendiente}),0)}\,\%%
+  \else --\fi}
+\newcommand{\ResumenAtencion}{%
+  \par\vspace{6pt}\noindent
+  \begin{minipage}{\linewidth}
+  \Seccion{Resumen de atención}
+  {\small\begin{tabular}{|L{6cm}|L{3cm}|L{3cm}|}
+    \hline
+    \rowcolor{encabezado}\textbf{Estado} & \textbf{Observaciones} & \textbf{Porcentaje} \\ \hline
+    \cellcolor{edoAtendida}Atendida & \arabic{nAtendida} & \mc@pct{nAtendida} \\ \hline
+    \cellcolor{edoParcial}Atendida parcialmente & \arabic{nParcial} & \mc@pct{nParcial} \\ \hline
+    \cellcolor{edoNoAtendida}No atendida (justificada) & \arabic{nNoAtendida} & \mc@pct{nNoAtendida} \\ \hline
+    \cellcolor{edoPendiente}Pendiente (en gestión) & \arabic{nPendiente} & \mc@pct{nPendiente} \\ \hline
+    \textbf{Total} & \textbf{\number\mc@total} & \textbf{100\,\%} \\ \hline
+  \end{tabular}\par}
+  \vspace{2pt}{\footnotesize\color{gris}Los conteos se calculan solos a partir de la columna Estado.\par}
+  \end{minipage}\par}
+
+% ---------- Firmas ----------
+\newcommand{\mc@firma}[1]{\rule{0pt}{1.6cm}\par\rule{6.4cm}{0.4pt}\par{\footnotesize #1}\par\vspace{2pt}}
+\newcommand{\Firmas}{%
+  \par\vspace{6pt}\noindent
+  \begin{minipage}{\linewidth}
+  \Seccion{Validación y firmas}
+  {\small Firma al menos uno de los asesores. Con su firma confirma que revisó la nueva versión
+  y que los cambios responden a las observaciones del profesor.\par}
+  \vspace{4pt}
+  \begin{tabular}{|L{7.2cm}|L{7.2cm}|L{7.2cm}|}
+    \hline
+    \rowcolor{encabezado}\textbf{Tesistas} & \textbf{Asesor que valida los cambios} &
+      \textbf{Profesor de la asignatura} \\ \hline
+    \mc@firma{Nombre y firma} & \mc@firma{Nombre, firma y fecha de validación} &
+      \mc@firma{Nombre, firma y fecha de dictamen} \\
+    \mc@firma{Nombre y firma} & \mc@firma{Segundo asesor (opcional): nombre y firma} & \\ \hline
+  \end{tabular}
+  \end{minipage}\par}
+\makeatother
+
+\endinput

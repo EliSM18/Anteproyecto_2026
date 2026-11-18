@@ -1,0 +1,515 @@
+% =====================================================================
+%  MATRIZ DE CONTROL DE CAMBIOS DEL ANTEPROYECTO DE TESIS
+%  Plantilla para llenar
+%
+%  Compilar con pdfLaTeX (dos veces si la tabla ocupa varias páginas).
+%  El archivo ejemplo_APEX.tex muestra una matriz ya llenada.
+% =====================================================================
+\documentclass[10pt]{article}
+\usepackage{matrizcambios}
+
+% ---------------------------------------------------------------------
+%  1. DATOS DE IDENTIFICACIÓN
+% ---------------------------------------------------------------------
+\TituloProyecto{Plataforma web con geolocalización y verificación para la búsqueda de viviendas en arrendamiento: caso de estudiantes de la Universidad de la Sierra Sur}
+\Tesistas{Mayra Castellanos Pacheco; Elisa Sánchez Martínez}
+\Asesores{M.C.C. Eliezer Alcázar Silva; M.C.C. Lirio Ruiz Guerra; M.F. Máximo Jorge Saavedra García; M.T.E. Everardo de Jesús Pacheco Antonio}
+\AsesorValida{[Grado y nombre del asesor que valida los cambios]}
+\Profesor{[Grado y nombre del profesor de la asignatura]}
+\VersionRevisada{Versión 1, reporte del 14 de noviembre de 2026}
+\VersionEntregada{Versión 2, [fecha de entrega]}
+\TotalObservaciones{65}
+
+\begin{document}
+
+\EncabezadoMatriz
+\DatosIdentificacion
+
+% ---------------------------------------------------------------------
+%  2. MATRIZ
+%
+%  Una línea \observacion por cada observación del reporte, en el mismo
+%  orden. Cada \observacion lleva 8 argumentos entre llaves:
+%
+%   {Núm.}{Sección}{Observación del profesor}{Acción realizada}
+%   {Ubicación en la nueva versión}{Estado}{Justificación}{Validación}
+%
+%  Prefijos del número:  P  prioritarias   T  título     A  antecedentes
+%                        PL planteamiento  J  justif.    O  objetivos
+%                        H  hipótesis      E  elementos ausentes
+%                        R  referencias    F  forma
+%
+%  Estado: usen SOLO uno de estos comandos (colorean la celda y se
+%  cuentan solos en el resumen):
+%     \Atendida   \Parcial   \NoAtendida   \Pendiente
+%
+%  - Acción realizada: qué se cambió, en pasado y con datos concretos.
+%    Para separar párrafos dentro de una celda usen \newline.
+%    Si cambian la pregunta, un objetivo o la hipótesis:
+%    \textbf{Antes:} texto anterior \newline \textbf{Después:} texto nuevo
+%  - Ubicación: sección, página y, si aplica, tabla, figura o anexo.
+%  - Justificación: obligatoria si el estado no es \Atendida; si no
+%    aplica, escriban --.
+%  - Si una observación se repite, atiéndanla una vez y en las demás
+%    escriban "Ver P-3" (o el número que corresponda).
+%  - Validación: nombre o iniciales del asesor que aprobó esa fila,
+%    después de revisarla con él. Si el asesor prefiere rubricar a mano
+%    sobre la versión impresa, déjenla vacía: {}
+%  - La columna "Dictamen del profesor" se genera vacía; no la llenen.
+%
+%  Agreguen o borren líneas según su reporte.
+% ---------------------------------------------------------------------
+\begin{matriz}
+% ===================== Observaciones prioritarias =====================
+\observacion{P-1}{Prioritaria}
+  {La escala de Jian et al.\ mide confianza en sistemas automatizados, no en la veracidad de las ofertas ni en los arrendadores.}
+  {Se sustituyó la escala de Jian et al.\ (2000) por una adaptación de las creencias de confianza de McKnight et al.\ (2002), con dos subescalas: confianza en las ofertas y los arrendadores (principal, usada en la hipótesis) y confianza en el medio (complementaria), Likert 1--7.\newline
+   Se redefinió conceptualmente la variable (integridad, competencia y benevolencia).\newline
+   Se agregó un párrafo que justifica el descarte de la escala anterior y se definió la validez de contenido por panel de expertos con la razón de Lawshe (1975) y el alfa de Cronbach en prueba piloto.}
+  {Sección 1.6.2, pp.~10--12; Tabla~1}
+  {\Atendida}{--}{}
+
+\observacion{P-2}{Prioritaria}
+  {Las condiciones no son equivalentes y hay arrastre; no se define cómo se simula Facebook.}
+  {Se definieron dos subconjuntos de ofertas (A y B) y dos tareas equivalentes, cruzados con el medio y el orden; las cuatro combinaciones se asignan al azar.\newline
+   La condición de medios actuales se reproduce en un grupo privado de Facebook que replica las publicaciones originales (con autorización), con buscador y desplazamiento normales; los anuncios físicos se presentan como fotografías en el mismo grupo.\newline
+   Se agregó el conjunto de ofertas y tareas como variable de control.}
+  {Sección 1.6.4, pp.~12--13; Tabla~1 (variables de control)}
+  {\Atendida}{--}{}
+
+\observacion{P-3}{Prioritaria}
+  {La verificación es central pero está indefinida y no figura en el objetivo 3.}
+  {Se incluyó la verificación de arrendadores e inmuebles en el objetivo específico 3 y se agregó el objetivo 4 (construir y verificar el conjunto de ofertas).\newline
+   Se estableció que todas las ofertas mostradas como verificadas en el experimento pasarán efectivamente por el mecanismo (p.~ej., validación de identidad y visita al inmueble).}
+  {Sección 1.5.2, p.~9; Sección 1.6.4, p.~13}
+  {\Parcial}
+  {Falta definir en qué consiste exactamente el mecanismo de verificación; se especificará como producto del objetivo 2.}
+  {}
+
+\observacion{P-4}{Prioritaria}
+  {El tiempo medido es el de localizar una oferta en pantalla, no el de conseguir vivienda.}
+  {Se renombró la variable a \textbf{tiempo de localización de ofertas} en todo el documento (pregunta, objetivos, hipótesis, Tabla~1).\newline
+   Se agregó la exactitud de la elección como variable dependiente secundaria (aciertos y tasa de tareas concluidas).\newline
+   Se declaró la limitación: no incluye contactar, visitar ni cerrar el trato.}
+  {Secciones 1.3.1, 1.5, 1.6.1--1.6.2, pp.~7--12; Sección 1.6.6, p.~14}
+  {\Atendida}{--}{}
+
+\observacion{P-5}{Prioritaria}
+  {La proporción de foráneos, los fraudes y la matrícula se afirman sin fuente.}
+  {Se reestructuró el planteamiento para incorporar la fuente y ciclo de la matrícula, el porcentaje de estudiantes no residentes, los resultados de un sondeo exploratorio sobre fraudes y una revisión de los grupos de Facebook.}
+  {Sección 1.2, pp.~5--6}
+  {\Pendiente}
+  {Los datos se dejaron como marcadores en el texto. Falta solicitar la matrícula y el porcentaje de foráneos a Servicios Escolares y aplicar el sondeo exploratorio. Fecha compromiso: [fecha].}
+  {}
+
+\observacion{P-6}{Prioritaria}
+  {No hay tamaño de muestra y la población varía entre estudiantes, docentes y trabajadores.}
+  {Se calculó la muestra: $t$ pareada unilateral, $\alpha = 0.05$, $d = 0.5$; 27 participantes con potencia 0.80 y 36 con potencia 0.90 por la prueba de intersección-unión; con 10\,\% de pérdidas se reclutarán al menos 40.\newline
+   Se fijó la población en estudiantes no residentes de la UNSIS; se eliminaron las menciones a movilidad laboral, docentes y administrativos.}
+  {Sección 1.6.4, p.~13; Secciones 1.2--1.4}
+  {\Parcial}
+  {El cálculo se planteó con Cohen (1988) y G*Power (Faul et al., 2007), pero falta confirmarlo formalmente en G*Power y ajustarlo con la prueba piloto.}
+  {}
+
+% ===================== Título =====================
+\observacion{T-1}{Título}
+  {El título describe otro proyecto (gestión de contratos), dice ``desarrollo'' cuando se evalúa un efecto y no menciona a los estudiantes ni la geolocalización.}
+  {\textbf{Antes:} ``Desarrollo de plataforma web para gestión de viviendas en arrendamiento en Miahuatlán de Porfirio Díaz, Oaxaca''\newline
+   \textbf{Después:} ``Plataforma web con geolocalización y verificación para la búsqueda de viviendas en arrendamiento: caso de estudiantes de la Universidad de la Sierra Sur''}
+  {Portada}
+  {\Atendida}{--}{}
+
+% ===================== Antecedentes =====================
+\observacion{A-1}{Antecedentes}
+  {No hay antecedentes sobre confianza en plataformas.}
+  {Se agregó el apartado ``Confianza y verificación en plataformas entre particulares'' con McKnight et al.\ (2002), Gefen et al.\ (2003) y Ert et al.\ (2016), y se incorporó a la síntesis y brecha.}
+  {Sección 1.1.4, p.~3; Sección 1.1.6, p.~5}
+  {\Atendida}{--}{}
+
+\observacion{A-2}{Antecedentes}
+  {No hay antecedentes sobre mecanismos de verificación.}
+  {Sin cambio en el texto; se dejó anotado en el código fuente.}
+  {Sección 1.1.4}
+  {\Pendiente}
+  {Falta revisar literatura sobre insignias de identidad, validación de documentos, reseñas y reportes de usuarios.}
+  {}
+
+\observacion{A-3}{Antecedentes}
+  {No hay antecedentes sobre fraude en renta de vivienda.}
+  {Sin cambio en el texto; se dejó anotado en el código fuente.}
+  {Sección 1.1.4}
+  {\Pendiente}
+  {Falta buscar datos de fraude en renta (p.~ej., PROFECO, CONDUSEF, policía cibernética).}
+  {}
+
+\observacion{A-4}{Antecedentes}
+  {Faltan sistemas comparables y el análisis de las plataformas comerciales.}
+  {Sin cambio en el texto; se dejó anotado en el código fuente.}
+  {Sección 1.1.5}
+  {\Pendiente}
+  {Falta agregar otros desarrollos universitarios y analizar Stukey, Roomgo y Spotahome (funciones, cobertura, verificación).}
+  {}
+
+\observacion{A-5}{Antecedentes}
+  {Pertinencia débil de los estudios de Airbnb y de Pasco.}
+  {Se redujo la reseña de Garrido Rodríguez (2025) y se declaró su pertinencia indirecta.\newline
+   Se redujo la reseña de Valenzuela (2024) a un párrafo que la presenta como antecedente lejano, retomado solo para el modelado de datos.}
+  {Sección 1.1.3, p.~3; Sección 1.1.5, p.~5}
+  {\Atendida}{--}{}
+
+\observacion{A-6}{Antecedentes}
+  {Verbos demasiado fuertes (``demuestra'', ``prueban'').}
+  {Se sustituyeron ``demuestran'' por ``documentan'', ``prueban la viabilidad'' por ``muestran que es técnicamente posible'' y ``muestra'' por ``sugiere'' en la síntesis; también en la justificación tecnológica.}
+  {Sección 1.1.6, p.~5; Sección 1.4, p.~8}
+  {\Atendida}{--}{}
+
+\observacion{A-7}{Antecedentes}
+  {El panorama local no da cifras.}
+  {Se agregó la oración que reporta población total, viviendas habitadas, ocupantes por vivienda, proporción rentada y acceso a internet en 2020.}
+  {Sección 1.1.1, p.~1}
+  {\Parcial}
+  {Las cifras aparecen como marcadores; falta transcribirlas de Data México / Censo 2020.}
+  {}
+
+\observacion{A-8}{Antecedentes}
+  {El párrafo de 1.1.3 no nombra a la autora y encadena resultados en una oración.}
+  {Se reescribió con el formato autor, objetivo, método, resultados y limitación, iniciando con Garrido Rodríguez (2025).}
+  {Sección 1.1.3, p.~3}
+  {\Atendida}{--}{}
+
+\observacion{A-9}{Antecedentes}
+  {Ampliar la base a 20--30 fuentes arbitradas.}
+  {Se agregaron tres artículos arbitrados de antecedentes (McKnight et al., 2002; Gefen et al., 2003; Ert et al., 2016) y tres referencias metodológicas (Lawshe, 1975; Cohen, 1988; Faul et al., 2007).}
+  {Sección 1.1.4; Referencias, p.~16}
+  {\Parcial}
+  {Aún no se alcanzan 20--30 fuentes; se completará al atender A-2, A-3 y A-4.}
+  {}
+
+% ===================== Planteamiento =====================
+\observacion{PL-1}{Planteamiento}
+  {La matrícula de 2,294 estudiantes aparece sin fuente ni fecha.}
+  {Ver P-5.}
+  {Sección 1.2, p.~5}
+  {\Pendiente}{Misma observación que P-5.}{}
+
+\observacion{PL-2}{Planteamiento}
+  {Falta el porcentaje de estudiantes foráneos (``un porcentaje considerable'').}
+  {Ver P-5. Se eliminó la expresión ``un porcentaje considerable''.}
+  {Sección 1.2, p.~5}
+  {\Pendiente}{Misma observación que P-5.}{}
+
+\observacion{PL-3}{Planteamiento}
+  {Los fraudes se afirman sin documentarse.}
+  {Ver P-5.}
+  {Sección 1.2, p.~6}
+  {\Pendiente}{Misma observación que P-5.}{}
+
+\observacion{PL-4}{Planteamiento}
+  {La descripción de los medios actuales no tiene sustento.}
+  {Se agregó la oración de la revisión exploratoria: número de grupos de Facebook y publicaciones mensuales.}
+  {Sección 1.2, p.~6}
+  {\Pendiente}
+  {Las cifras aparecen como marcadores; falta realizar el registro de grupos, publicaciones por mes y antigüedad de los anuncios.}
+  {}
+
+\observacion{PL-5}{Planteamiento}
+  {Falta el lado de la oferta (arrendadores).}
+  {Se agregó un párrafo sobre las dificultades de los arrendadores (pérdida de visibilidad, republicación, consultas no pertinentes) y las condiciones para que adopten la plataforma y la verificación.}
+  {Sección 1.2, p.~6}
+  {\Atendida}
+  {La descripción se confirmará con las entrevistas a arrendadores (objetivo específico 1).}
+  {}
+
+\observacion{PL-6}{Planteamiento}
+  {Población inconsistente entre pregunta, justificación e hipótesis.}
+  {Ver P-6.}
+  {--}
+  {\Atendida}{Misma observación que P-6.}{}
+
+\observacion{PL-7}{Planteamiento}
+  {La pregunta está escondida al final de un párrafo.}
+  {Se creó la sección ``Preguntas de investigación'' con pregunta general y cuatro preguntas específicas.}
+  {Sección 1.3, p.~7}
+  {\Atendida}{--}{}
+
+\observacion{PL-8}{Planteamiento}
+  {Redacción de la pregunta: la causa es el uso, no el diseño; ``optimizar'' es impreciso.}
+  {\textbf{Antes:} ``¿En qué medida el diseño e implementación de una plataforma web centralizada con geolocalización y mecanismos de verificación de viviendas en arrendamiento puede optimizar los tiempos de búsqueda y aumentar el nivel de confianza percibida para la población en situación de movilidad académica y laboral?''\newline
+   \textbf{Después:} ``¿En qué medida el uso de una plataforma web centralizada, con geolocalización y verificación de inmuebles, reduce el tiempo de localización de ofertas y aumenta la confianza percibida de los estudiantes no residentes de la Universidad de la Sierra Sur, en comparación con los medios de difusión actuales?''\newline
+   Se agregaron las cuatro preguntas específicas sugeridas.}
+  {Secciones 1.3.1 y 1.3.2, p.~7}
+  {\Atendida}{--}{}
+
+% ===================== Justificación =====================
+\observacion{J-1}{Justificación}
+  {La reducción de gastos se afirma pero no se mide.}
+  {Se presentó como ``beneficio esperado, que no será medido en este estudio''.}
+  {Sección 1.4, p.~8}
+  {\Atendida}{--}{}
+
+\observacion{J-2}{Justificación}
+  {Afirmación absoluta: ``en ningún medio de difusión local''.}
+  {Se matizó: ``criterios que no se encontraron en los medios de difusión locales revisados''.}
+  {Sección 1.4, p.~8}
+  {\Atendida}{--}{}
+
+\observacion{J-3}{Justificación}
+  {``Formalizar acuerdos'' roza lo jurídico.}
+  {Se cambió a ``ofrece a ambas partes una referencia clara al momento de acordar la renta'' y se aclaró que la plataforma no genera contratos ni sustituye la asesoría legal. Se eliminó ``canal formal''.}
+  {Sección 1.4, p.~8}
+  {\Atendida}{--}{}
+
+\observacion{J-4}{Justificación}
+  {Falta la viabilidad: tiempo, recursos, acceso a participantes y arrendadores, cartografía y costo de mapas.}
+  {Se agregó el apartado \textbf{Viabilidad}: periodo 2026--2027, recursos propios y de código abierto, cartografía del Plan de Ordenamiento Territorial, acceso a participantes y a arrendadores.}
+  {Sección 1.4, pp.~8--9}
+  {\Parcial}
+  {Falta confirmar el servicio de mapas y su costo, y la disponibilidad de la cartografía en formato utilizable (shapefile, GeoJSON).}
+  {}
+
+\observacion{J-5}{Justificación}
+  {Falta la continuidad de la plataforma al concluir la tesis.}
+  {Se agregó el apartado \textbf{Continuidad}: transferencia de la operación con documentación y manual de administración; actualización por los arrendadores y caducidad automática de publicaciones.}
+  {Sección 1.4, p.~9}
+  {\Parcial}
+  {Falta definir y confirmar la instancia responsable de operar la plataforma.}
+  {}
+
+% ===================== Objetivos =====================
+\observacion{O-1}{Objetivos}
+  {El objetivo general omite el desarrollo de la plataforma.}
+  {\textbf{Antes:} ``Evaluar el efecto de una plataforma web centralizada, con geolocalización y mecanismos de verificación de inmuebles, en el tiempo de búsqueda de vivienda en renta y en la confianza percibida\ldots''\newline
+   \textbf{Después:} ``Desarrollar una plataforma web centralizada, con geolocalización y verificación de inmuebles, y evaluar su efecto en el tiempo de localización de ofertas y en la confianza percibida de estudiantes no residentes\ldots durante el periodo 2026--2027.''}
+  {Sección 1.5.1, p.~9}
+  {\Atendida}{--}{}
+
+\observacion{O-2}{Objetivos}
+  {Objetivo 1: el método puede pasar a la metodología.}
+  {Se retiró ``mediante encuestas y entrevistas'' del objetivo 1.}
+  {Sección 1.5.2, p.~9}
+  {\Atendida}{--}{}
+
+\observacion{O-3}{Objetivos}
+  {Objetivo 3 no incluye la verificación.}
+  {\textbf{Antes:} ``Implementar un prototipo funcional\ldots que integre el registro de inmuebles, la búsqueda por criterios\ldots y su visualización geográfica''\newline
+   \textbf{Después:} ``Implementar un prototipo funcional que integre registro de inmuebles, verificación de arrendadores e inmuebles, búsqueda por criterios y visualización geográfica.''}
+  {Sección 1.5.2, p.~9}
+  {\Atendida}{--}{}
+
+\observacion{O-4}{Objetivos}
+  {Objetivo 4: agregar la exactitud de la elección.}
+  {Ahora es el objetivo 5: ``Comparar el tiempo de localización de ofertas, la exactitud de la elección y la confianza percibida\ldots''}
+  {Sección 1.5.2, p.~9}
+  {\Atendida}{--}{}
+
+\observacion{O-5}{Objetivos}
+  {Objetivo 5: ``como'' deja abierta la elección; no hay tareas para arrendadores.}
+  {Ahora es el objetivo 6: ``Evaluar la usabilidad percibida del prototipo con estudiantes y arrendadores mediante la escala SUS''.\newline
+   Se definieron tareas para arrendadores: registrar un inmueble, completar la verificación y actualizar su disponibilidad.}
+  {Sección 1.5.2, p.~9; Sección 1.6.7, p.~14}
+  {\Atendida}{--}{}
+
+\observacion{O-6}{Objetivos}
+  {Falta un objetivo para construir el conjunto de ofertas reales del experimento.}
+  {Se agregó el objetivo 4: ``Construir el conjunto de ofertas reales que alimentará ambas condiciones de la evaluación: recopilarlas, obtener la autorización de los arrendadores, geolocalizarlas y verificarlas.''}
+  {Sección 1.5.2, p.~9}
+  {\Atendida}{--}{}
+
+% ===================== Hipótesis y variables =====================
+\observacion{H-1}{Hipótesis (constructo)}
+  {Confianza: la escala y la definición provienen de la automatización.}
+  {Ver P-1.}
+  {--}
+  {\Atendida}{Misma observación que P-1.}{}
+
+\observacion{H-2}{Hipótesis (constructo)}
+  {Tiempo de búsqueda: renombrar y reconocer su alcance.}
+  {Ver P-4.\newline
+   \textbf{Antes (H1):} ``\ldots reduce el tiempo de búsqueda de viviendas en renta\ldots''\newline
+   \textbf{Después (H1):} ``\ldots reduce el tiempo de localización de ofertas de vivienda en renta\ldots''}
+  {Sección 1.6.1, p.~10}
+  {\Atendida}{Misma observación que P-4.}{}
+
+\observacion{H-3}{Hipótesis (constructo)}
+  {Rapidez sin exactitud.}
+  {Se registra si la oferta elegida cumple todos los criterios y si la tarea se concluyó; se reportan proporción de aciertos y tasa de tareas concluidas, comparadas con McNemar.}
+  {Tabla~1, p.~11; Sección 1.6.5, p.~14}
+  {\Atendida}{--}{}
+
+\observacion{H-4}{Hipótesis (constructo)}
+  {El tiempo límite genera efecto de techo.}
+  {Se fijó el límite en 10 minutos; se reportará cuántos casos lo alcanzan y se hará un análisis de sensibilidad excluyéndolos.}
+  {Sección 1.6.4, p.~13; Tabla~1}
+  {\Atendida}{El límite se confirmará tras la prueba piloto.}{}
+
+\observacion{H-5}{Hipótesis (validez interna)}
+  {Arrastre entre condiciones.}
+  {Ver P-2.}
+  {--}
+  {\Atendida}{Misma observación que P-2.}{}
+
+\observacion{H-6}{Hipótesis (validez interna)}
+  {Simulación de los medios actuales.}
+  {Ver P-2.}
+  {--}
+  {\Atendida}{Misma observación que P-2.}{}
+
+\observacion{H-7}{Hipótesis (validez interna)}
+  {Verificación real de las ofertas del experimento.}
+  {Ver P-3.}
+  {--}
+  {\Parcial}{Misma observación que P-3.}{}
+
+\observacion{H-8}{Hipótesis (validez interna)}
+  {Efecto de paquete.}
+  {Se agregó el apartado de limitaciones del diseño con el efecto de paquete, el alcance del tiempo medido y la situación simulada.}
+  {Sección 1.6.6, p.~14}
+  {\Atendida}{--}{}
+
+\observacion{H-9}{Hipótesis (validez interna)}
+  {Deseabilidad social.}
+  {Se establecieron cuestionarios anónimos, guion estandarizado y, de ser posible, un moderador ajeno al desarrollo.}
+  {Sección 1.6.4, p.~13; Tabla~1}
+  {\Atendida}{--}{}
+
+\observacion{H-10}{Hipótesis (validez interna)}
+  {Indicar que el orden se asigna al azar.}
+  {Se indicó en la introducción de la hipótesis y en el diseño: el orden de uso y el subconjunto de ofertas se asignan al azar.}
+  {Sección 1.6, p.~10; Sección 1.6.4, p.~12}
+  {\Atendida}{--}{}
+
+\observacion{H-11}{Hipótesis (análisis)}
+  {No se indica el tamaño de muestra.}
+  {Ver P-6.}
+  {--}
+  {\Parcial}{Misma observación que P-6.}{}
+
+\observacion{H-12}{Hipótesis (análisis)}
+  {Reportar tamaño del efecto.}
+  {Se agregó el reporte de la diferencia de medias con IC al 95\,\% y la $d$ de Cohen, además del valor $p$.}
+  {Sección 1.6.5, p.~14}
+  {\Atendida}{--}{}
+
+\observacion{H-13}{Hipótesis (análisis)}
+  {Distribución asimétrica de los tiempos; no decidir según Shapiro-Wilk.}
+  {Se definió de antemano la transformación logarítmica del tiempo y la prueba de Wilcoxon como análisis de robustez; se eliminó la decisión basada en Shapiro-Wilk.}
+  {Sección 1.6.5, p.~13}
+  {\Atendida}{--}{}
+
+\observacion{H-14}{Hipótesis (análisis)}
+  {Especificar cómo se usan las covariables.}
+  {Se especificó un modelo lineal mixto con medio, orden y subconjunto como efectos fijos, el participante como efecto aleatorio y la experiencia previa y uso de Facebook como covariables.}
+  {Sección 1.6.5, p.~14}
+  {\Atendida}{--}{}
+
+\observacion{H-15}{Hipótesis (análisis)}
+  {Nombrar el tipo de diseño.}
+  {Se declaró: ``diseño experimental intrasujetos con contrabalanceo''.}
+  {Sección 1.6, p.~10}
+  {\Atendida}{--}{}
+
+\observacion{H-16}{Hipótesis (presentación)}
+  {Sustituir ``Elementos detectados para operacionalizar la hipótesis''.}
+  {Se cambió por ``Elementos de la hipótesis''.}
+  {Sección 1.6.1, p.~10}
+  {\Atendida}{--}{}
+
+\observacion{H-17}{Hipótesis (presentación)}
+  {La Tabla 1 solo incluye las variables dependientes.}
+  {Se reorganizó la tabla de operacionalización: variable independiente (medio de búsqueda), dependientes (tiempo, confianza, exactitud) y de control (ofertas y tareas, entorno, experiencia previa).}
+  {Sección 1.6.2, pp.~10--11; Tabla~1}
+  {\Atendida}{--}{}
+
+\observacion{H-18}{Hipótesis (presentación)}
+  {El detalle del procedimiento pertenece a la metodología.}
+  {Se sustituyó por un ``Resumen del diseño de la evaluación'' que remite al capítulo de metodología.}
+  {Sección 1.6.4, p.~12}
+  {\Atendida}{--}{}
+
+% ===================== Matriz de congruencia =====================
+\observacion{E-1}{Matriz de congruencia}
+  {Matriz de congruencia propuesta, con decisiones de las tesistas entre corchetes.}
+  {Se agregó la matriz de congruencia con las seis preguntas, objetivos, criterios de logro y técnicas; se fijó el experimento en al menos 40 participantes.}
+  {Sección 1.7, p.~15; Tabla~2}
+  {\Parcial}
+  {Faltan los tamaños de la encuesta, de las entrevistas y del conjunto de ofertas.}
+  {}
+
+% ===================== Referencias =====================
+\observacion{R-1}{Referencias}
+  {Data México se atribuye a INEGI.}
+  {Se cambió el autor institucional a la Secretaría de Economía (clave SE2020DataMexico) y se actualizaron las citas.}
+  {Sección 1.1.1, p.~1; Referencias, p.~16}
+  {\Atendida}{Falta agregar la fecha de consulta.}{}
+
+\observacion{R-2}{Referencias}
+  {La referencia de Valenzuela Robles dice solo ``Tesis''.}
+  {Se cambió el tipo a ``Tesis de licenciatura''.}
+  {Referencias, p.~16}
+  {\Parcial}{Falta confirmar el grado en el repositorio de la UNDAC.}{}
+
+% ===================== Forma =====================
+\observacion{F-1}{Forma}
+  {La portada dice ``TESIS para obtener el título''.}
+  {Se cambió a ``ANTEPROYECTO DE TESIS'' y se eliminó un espacio vertical duplicado.}
+  {Portada}
+  {\Atendida}{--}{}
+
+\observacion{F-2}{Forma}
+  {Nombres de las autoras con apellidos antes del nombre.}
+  {Se escribieron como Mayra Castellanos Pacheco y Elisa Sánchez Martínez (portada y README).}
+  {Portada}
+  {\Atendida}{--}{}
+
+\observacion{F-3}{Forma}
+  {Falta el artículo en el título.}
+  {Ver T-1.}
+  {--}
+  {\Atendida}{Misma observación que T-1.}{}
+
+\observacion{F-4}{Forma}
+  {El capítulo se titula ``Introducción'' pero no contiene una.}
+  {Se renombró a ``Protocolo de investigación''.}
+  {Capítulo 1, p.~1}
+  {\Atendida}{--}{}
+
+\observacion{F-5}{Forma}
+  {Las vocales acentuadas no se copian ni se buscan en el PDF.}
+  {Se eliminó el paquete \texttt{ae}, que forzaba fuentes OT1 y anulaba \texttt{fontenc} T1, y se sustituyó \texttt{times} por \texttt{lmodern}.}
+  {Preámbulo (\texttt{main.tex})}
+  {\Atendida}{--}{}
+
+\observacion{F-6}{Forma}
+  {Separador de miles inconsistente (``2,294'', ``2 294'', ``55 147'').}
+  {Se unificó: cifras de cuatro dígitos sin separador (2294) y de cinco o más con espacio fino (55\,147).}
+  {Secciones 1.1.1, 1.2 y 1.4}
+  {\Atendida}{--}{}
+
+\observacion{F-7}{Forma}
+  {``De acuerdo a un análisis''.}
+  {Se reescribió el párrafo; se usa ``de acuerdo con''.}
+  {Sección 1.1.3, p.~3}
+  {\Atendida}{--}{}
+
+\observacion{F-8}{Forma}
+  {``Las autoras'' para Zepeda García y Bravo Salazar.}
+  {Se eliminó la expresión ``las autoras''; el párrafo usa ahora la cita narrativa sin marcar género.}
+  {Sección 1.1.2, p.~2}
+  {\Atendida}{--}{}
+
+\observacion{F-9}{Forma}
+  {Figuran cuatro directores.}
+  {Sin cambio; se dejó anotado en el código fuente.}
+  {Portada}
+  {\Pendiente}
+  {Falta confirmar con el reglamento de titulación si se permiten cuatro asesores.}
+  {}
+\end{matriz}
+
+% ---------------------------------------------------------------------
+%  3. RESUMEN (se calcula solo) Y FIRMAS
+% ---------------------------------------------------------------------
+\ResumenAtencion
+\Firmas
+
+\end{document}

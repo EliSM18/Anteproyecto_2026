@@ -2,19 +2,29 @@
 
 
 %%%% Paquetes %%%%%%%%%%%%%%%%%
-\usepackage[utf8]{inputenc}
+\usepackage{iftex}
+\ifLuaTeX
+  \usepackage{fontspec} % LuaLaTeX: Latin Modern en Unicode (acentos y signos ¿ ¡ correctos)
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
 \usepackage{verbatim}
 %\usepackage[latin1]{inputenc}
 %\inputencoding{latin1}
 %\usepackage[spanish]{babel}
-\usepackage[T1]{fontenc}
 %\usepackage[latin1]{inputenc}
 
 %\usepackage[latin1]{inputenc}
 \usepackage{graphicx}
 \usepackage{xcolor,colortbl}
+% Compatibilidad: colortbl (2026) usa \insert@pcolumn, que solo existe en array >= 2024.
+% Si la versión instalada de array es anterior, se define como \insert@column.
+\makeatletter
+\providecommand*{\insert@pcolumn}{\insert@column}
+\makeatother
 \usepackage{rotating}
-\usepackage{lmodern} % fuentes Latin Modern en codificación T1 (acentos copiables y buscables en el PDF)
 \usepackage{pdflscape}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -56,9 +66,36 @@
 \usepackage{amssymb}
 \usepackage{pifont}
 \usepackage{caption}
-\usepackage[draft,commandnameprefix=ifneeded]{changes} % resalta los cambios de la versión 2; usar [final] para la versión limpia
+% --- Resaltado de los cambios de la versión 2 ---
+% \nuevo{...} resalta en amarillo el texto nuevo o corregido. Requiere LuaLaTeX
+% (configurado en .latexmkrc). Para la versión limpia, cambiar \resaltartrue por \resaltarfalse.
+\newif\ifresaltar
+\resaltartrue
+\ifLuaTeX
+  \usepackage{luacolor}
+  \usepackage{lua-ul}
+  \LuaULSetHighLightColor{yellow}
+\fi
+\makeatletter
+\ifresaltar
+  \ifLuaTeX
+    \DeclareRobustCommand{\nuevo}[1]{\highLight{#1}}
+    \newcommand{\nuevobib}{\@highLight}   % interruptor para las entradas nuevas de la bibliografía
+  \else
+    % Con pdfLaTeX no se puede resaltar texto con citas y fórmulas; se usa color como respaldo.
+    \DeclareRobustCommand{\nuevo}[1]{\textcolor{orange!80!black}{#1}}
+    \newcommand{\nuevobib}{\color{orange!80!black}}
+  \fi
+\else
+  \DeclareRobustCommand{\nuevo}[1]{#1}
+  \newcommand{\nuevobib}{}
+\fi
+\makeatother
 \usepackage[backend=biber, style=apa]{biblatex}
 \addbibresource{bibliografia.bib}
+% Las referencias agregadas o corregidas en la versión 2 llevan keywords = {nuevo} en el .bib
+\AtEveryBibitem{\ifkeyword{nuevo}{\nuevobib}{}}
+
 % APA 7 en español: "y" en lugar de "&" entre los últimos autores
 \DeclareDelimFormat[bib,biblist]{finalnamedelim}{\addspace y\space}
 \DeclareDelimFormat[textcite]{finalnamedelim}{\addspace y\space}
@@ -148,8 +185,8 @@ backgroundcolor=\color{gray75},
 
 
 %------------ Informacin de la Tesis
-\title{\Large \added{Plataforma web con geolocalización y verificación para la búsqueda de viviendas en arrendamiento: caso de estudiantes de la Universidad de la Sierra Sur}}	%---> Titulo
-\author{Mayra Castellanos Pacheco \\ Elisa Sánchez Martínez}												%---> Autor
+\title{\Large \nuevo{Efecto de una plataforma web en el tiempo de búsqueda y la confianza al rentar vivienda: estudiantes de la UNSIS}}	%---> Titulo
+\author{\nuevo{Mayra Castellanos Pacheco} \\ \nuevo{Elisa Sánchez Martínez}}												%---> Autor
 \usepackage[spanish]{babel}
 
 
@@ -198,7 +235,10 @@ backgroundcolor=\color{gray75},
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
 
+\setlength{\headheight}{14.5pt} % evita la advertencia de fancyhdr
+
 \begin{document}
+
 
     % Configuración de encabezados
     \pagestyle{fancy}
